@@ -1,0 +1,15 @@
+﻿@model Caja
+<form asp-action="Registrar" method="post">
+    <input type="hidden" asp-for="IdComercio" />
+
+    <label>Nombre de la Caja:</label>
+    <input asp-for="Nombre" class="form-control" />
+
+    <label>Descripción:</label>
+    <textarea asp-for="Descripcion" class="form-control"></textarea>
+
+    <label>Teléfono SINPE:</label>
+    <input asp-for="TelefonoSINPE" class="form-control" maxlength="10" />
+
+    <button type="submit" class="btn btn-success">Guardar Caja</button>
+</form>
