@@ -19,17 +19,17 @@ namespace ProyectoG3.Infrastructure.Services
         {
             return await _context.Comercios
                 .AsNoTracking()
-                .OrderByDescending(c => c.IdComercio)
-                .Select(c => new ComercioListDto
+                .OrderByDescending(x => x.IdComercio)
+                .Select(x => new ComercioListDto
                 {
-                    IdComercio = c.IdComercio,
-                    Identificacion = c.Identificacion,
-                    TipoIdentificacion = c.TipoIdentificacion,
-                    Nombre = c.Nombre,
-                    TipoDeComercio = c.TipoDeComercio,
-                    Telefono = c.Telefono,
-                    CorreoElectronico = c.CorreoElectronico,
-                    Estado = c.Estado
+                    IdComercio = x.IdComercio,
+                    Identificacion = x.Identificacion,
+                    TipoIdentificacion = x.TipoIdentificacion,
+                    Nombre = x.Nombre,
+                    TipoDeComercio = x.TipoDeComercio,
+                    Telefono = x.Telefono,
+                    CorreoElectronico = x.CorreoElectronico,
+                    Estado = x.Estado
                 })
                 .ToListAsync();
         }
@@ -38,20 +38,20 @@ namespace ProyectoG3.Infrastructure.Services
         {
             return await _context.Comercios
                 .AsNoTracking()
-                .Where(c => c.IdComercio == idComercio)
-                .Select(c => new ComercioDetailsDto
+                .Where(x => x.IdComercio == idComercio)
+                .Select(x => new ComercioDetailsDto
                 {
-                    IdComercio = c.IdComercio,
-                    Identificacion = c.Identificacion,
-                    TipoIdentificacion = c.TipoIdentificacion,
-                    Nombre = c.Nombre,
-                    TipoDeComercio = c.TipoDeComercio,
-                    Telefono = c.Telefono,
-                    CorreoElectronico = c.CorreoElectronico,
-                    Direccion = c.Direccion,
-                    FechaDeRegistro = c.FechaDeRegistro,
-                    FechaDeModificacion = c.FechaDeModificacion,
-                    Estado = c.Estado
+                    IdComercio = x.IdComercio,
+                    Identificacion = x.Identificacion,
+                    TipoIdentificacion = x.TipoIdentificacion,
+                    Nombre = x.Nombre,
+                    TipoDeComercio = x.TipoDeComercio,
+                    Telefono = x.Telefono,
+                    CorreoElectronico = x.CorreoElectronico,
+                    Direccion = x.Direccion,
+                    FechaDeRegistro = x.FechaDeRegistro,
+                    FechaDeModificacion = x.FechaDeModificacion,
+                    Estado = x.Estado
                 })
                 .FirstOrDefaultAsync();
         }
@@ -60,21 +60,25 @@ namespace ProyectoG3.Infrastructure.Services
         {
             try
             {
-                bool existe = await _context.Comercios
-                    .AnyAsync(c => c.Identificacion == dto.Identificacion);
+                var identificacion = (dto.Identificacion ?? string.Empty).Trim();
+                var nombre = (dto.Nombre ?? string.Empty).Trim();
+                var telefono = (dto.Telefono ?? string.Empty).Trim();
+                var correo = (dto.CorreoElectronico ?? string.Empty).Trim();
+                var direccion = (dto.Direccion ?? string.Empty).Trim();
 
+                bool existe = await _context.Comercios.AnyAsync(x => x.Identificacion == identificacion);
                 if (existe)
                     return (false, "Ya existe un comercio con esa identificación.");
 
                 var entity = new Comercio
                 {
-                    Identificacion = dto.Identificacion.Trim(),
+                    Identificacion = identificacion,
                     TipoIdentificacion = dto.TipoIdentificacion,
-                    Nombre = dto.Nombre.Trim(),
+                    Nombre = nombre,
                     TipoDeComercio = dto.TipoDeComercio,
-                    Telefono = dto.Telefono.Trim(),
-                    CorreoElectronico = dto.CorreoElectronico.Trim(),
-                    Direccion = dto.Direccion.Trim(),
+                    Telefono = telefono,
+                    CorreoElectronico = correo,
+                    Direccion = direccion,
                     FechaDeRegistro = DateTime.Now,
                     FechaDeModificacion = null,
                     Estado = true
@@ -84,6 +88,11 @@ namespace ProyectoG3.Infrastructure.Services
                 await _context.SaveChangesAsync();
 
                 return (true, "Comercio registrado correctamente.");
+            }
+            catch (DbUpdateException)
+            {
+                // Por si el índice único se dispara (backup)
+                return (false, "No se pudo registrar. La identificación ya existe.");
             }
             catch
             {
@@ -95,17 +104,15 @@ namespace ProyectoG3.Infrastructure.Services
         {
             try
             {
-                var entity = await _context.Comercios
-                    .FirstOrDefaultAsync(c => c.IdComercio == dto.IdComercio);
+                var entity = await _context.Comercios.FirstOrDefaultAsync(x => x.IdComercio == dto.IdComercio);
+                if (entity is null)
+                    return (false, "No se encontró el comercio.");
 
-                if (entity == null)
-                    return (false, "El comercio no existe.");
-
-                entity.Nombre = dto.Nombre.Trim();
+                entity.Nombre = (dto.Nombre ?? string.Empty).Trim();
                 entity.TipoDeComercio = dto.TipoDeComercio;
-                entity.Telefono = dto.Telefono.Trim();
-                entity.CorreoElectronico = dto.CorreoElectronico.Trim();
-                entity.Direccion = dto.Direccion.Trim();
+                entity.Telefono = (dto.Telefono ?? string.Empty).Trim();
+                entity.CorreoElectronico = (dto.CorreoElectronico ?? string.Empty).Trim();
+                entity.Direccion = (dto.Direccion ?? string.Empty).Trim();
                 entity.Estado = dto.Estado;
                 entity.FechaDeModificacion = DateTime.Now;
 

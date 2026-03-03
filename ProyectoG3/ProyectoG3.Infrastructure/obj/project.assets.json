@@ -888,6 +888,39 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "MySqlConnector/2.3.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
+        },
+        "compile": {
+          "lib/net8.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[8.0.2, 8.0.999]",
+          "MySqlConnector": "2.3.5"
+        },
+        "compile": {
+          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2923,6 +2956,50 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "MySqlConnector/2.3.5": {
+      "sha512": "AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
+      "type": "package",
+      "path": "mysqlconnector/2.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/MySqlConnector.dll",
+        "lib/net462/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net48/MySqlConnector.dll",
+        "lib/net48/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.xml",
+        "lib/net8.0/MySqlConnector.dll",
+        "lib/net8.0/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.3.5.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
+      "sha512": "XjnlcxVBLnEMbyEc5cZzgZeDyLvAniACZQ04W1slWN0f4rmfNzl98gEMvHnFH0fMDF06z9MmgGi/Sr7hJ+BVnw==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -4036,28 +4113,29 @@
       "Microsoft.EntityFrameworkCore >= 8.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.12",
+      "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
       "ProyectoG3.Application >= 1.0.0",
       "ProyectoG3.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marie\\.nuget\\packages\\": {},
+    "C:\\Users\\Dylan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
       "projectName": "ProyectoG3.Infrastructure",
-      "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4066,17 +4144,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
-              "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
+            "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
+              "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
             },
-            "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
-              "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra 1 avance\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
+            "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
             }
           }
         }
@@ -4091,7 +4170,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -4110,6 +4189,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.12, )"
+          },
+          "Pomelo.EntityFrameworkCore.MySql": {
+            "target": "Package",
+            "version": "[8.0.2, )"
           }
         },
         "imports": [
@@ -4128,7 +4211,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

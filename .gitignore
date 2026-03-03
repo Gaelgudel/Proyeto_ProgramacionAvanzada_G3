@@ -2,4 +2,28 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
-/ProyectoG3/.vs
+# Visual Studio
+.vs/
+
+# Build outputs
+**/bin/
+**/obj/
+
+# User/IDE files
+*.user
+*.suo
+
+# Build artifacts
+*.dll
+*.pdb
+*.cache
+*.log
+
+# NuGet / assets
+project.assets.json
+project.nuget.cache
+*.nuget.*
+*.cache
+*.cache
+*.pdb
+*.dll

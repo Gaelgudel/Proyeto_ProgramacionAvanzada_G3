@@ -175,3 +175,5 @@ C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_Programacion
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\obj\Debug\net8.0\ProyectoG3.Web.pdb
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\obj\Debug\net8.0\ProyectoG3.Web.genruntimeconfig.cache
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\obj\Debug\net8.0\ref\ProyectoG3.Web.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
