@@ -1,0 +1,22 @@
+﻿@model Caja
+<form asp-action="Editar" method="post">
+    <input type="hidden" asp-for="IdCaja" />
+    <input type="hidden" asp-for="IdComercio" />
+
+    <label>Nombre:</label>
+    <input asp-for="Nombre" class="form-control" />
+
+    <label>Descripción:</label>
+    <textarea asp-for="Descripcion" class="form-control"></textarea>
+
+    <label>Teléfono SINPE:</label>
+    <input asp-for="TelefonoSINPE" class="form-control" />
+
+    <label>Estado:</label>
+    <select asp-for="Estado" class="form-control">
+        <option value="true">Activo</option>
+        <option value="false">Inactivo</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">Actualizar Cambios</button>
+</form>
