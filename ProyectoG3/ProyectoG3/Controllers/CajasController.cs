@@ -81,6 +81,19 @@ namespace ProyectoG3.Controllers
             }
         }
 
-        
+        [HttpGet]
+        public async Task<IActionResult> VerSinpe(int idCaja)
+        {
+            var caja = await _cajaService.ObtenerPorId(idCaja);
+            if (caja == null) return NotFound();
+
+            var sinpes = await _sinpeService.ObtenerSinpePorTelefono(caja.TelefonoSINPE);
+
+            ViewBag.NombreCaja = caja.Nombre;
+
+            return View(sinpes);
+        }
+
+
     }
 }
