@@ -7,7 +7,6 @@ namespace ProyectoG3.Controllers
 {
     public class CajasController : Controller
     {
-
         private readonly ICajaService _cajaService;
         private readonly ISinpeService _sinpeService;
 
@@ -15,6 +14,12 @@ namespace ProyectoG3.Controllers
         {
             _cajaService = cajaService;
             _sinpeService = sinpeService;
+        }
+
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return RedirectToAction("VerCajas", new { idComercio = 1 });
         }
 
         [HttpGet]
@@ -28,10 +33,8 @@ namespace ProyectoG3.Controllers
         [HttpGet]
         public IActionResult Registrar(int idComercio)
         {
-            // Se inicializa el modelo con la llave foránea del comercio
-            // y se establecen las propiedades requeridas para evitar CS9035.
-            return View(new Caja 
-            { 
+            return View(new Caja
+            {
                 IdComercio = idComercio,
                 Nombre = string.Empty,
                 Descripcion = string.Empty,
@@ -50,7 +53,6 @@ namespace ProyectoG3.Controllers
             }
             catch (Exception ex)
             {
-                // Se envía el mensaje de validación al navegador
                 ViewBag.Error = ex.Message;
                 return View(modelo);
             }
@@ -93,7 +95,5 @@ namespace ProyectoG3.Controllers
 
             return View(sinpes);
         }
-
-
     }
 }

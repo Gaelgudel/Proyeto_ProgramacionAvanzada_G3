@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+﻿using MySql.Data.MySqlClient;
 using ProyectoG3.Models;
 
 namespace ProyectoG3.Repository
@@ -16,8 +16,8 @@ namespace ProyectoG3.Repository
         {
             var lista = new List<Caja>();
 
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand("SELECT * FROM CAJAS WHERE IdComercio = @IdComercio", conn);
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand("SELECT * FROM CAJAS WHERE IdComercio = @IdComercio", conn);
 
             cmd.Parameters.AddWithValue("@IdComercio", idComercio);
 
@@ -28,14 +28,16 @@ namespace ProyectoG3.Repository
             {
                 lista.Add(new Caja
                 {
-                    IdCaja = (int)reader["IdCaja"],
-                    IdComercio = (int)reader["IdComercio"],
+                    IdCaja = Convert.ToInt32(reader["IdCaja"]),
+                    IdComercio = Convert.ToInt32(reader["IdComercio"]),
                     Nombre = reader["Nombre"].ToString()!,
                     Descripcion = reader["Descripcion"].ToString()!,
                     TelefonoSINPE = reader["TelefonoSINPE"].ToString()!,
-                    FechaDeRegistro = (DateTime)reader["FechaDeRegistro"],
-                    FechaDeModificacion = reader["FechaDeModificacion"] as DateTime?,
-                    Estado = (bool)reader["Estado"]
+                    FechaDeRegistro = Convert.ToDateTime(reader["FechaDeRegistro"]),
+                    FechaDeModificacion = reader["FechaDeModificacion"] == DBNull.Value
+                        ? null
+                        : Convert.ToDateTime(reader["FechaDeModificacion"]),
+                    Estado = Convert.ToBoolean(reader["Estado"])
                 });
             }
 
@@ -44,8 +46,8 @@ namespace ProyectoG3.Repository
 
         public async Task<bool> ValidarNombreEnComercio(string nombre, int idComercio)
         {
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand(
                 "SELECT COUNT(*) FROM CAJAS WHERE Nombre = @Nombre AND IdComercio = @IdComercio",
                 conn);
 
@@ -53,30 +55,28 @@ namespace ProyectoG3.Repository
             cmd.Parameters.AddWithValue("@IdComercio", idComercio);
 
             await conn.OpenAsync();
-            int count = (int)await cmd.ExecuteScalarAsync();
-
-            return count > 0;
+            var result = await cmd.ExecuteScalarAsync();
+            return Convert.ToInt32(result) > 0;
         }
 
         public async Task<bool> ValidarTelefonoGlobal(string telefono)
         {
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand(
                 "SELECT COUNT(*) FROM CAJAS WHERE TelefonoSINPE = @Telefono",
                 conn);
 
             cmd.Parameters.AddWithValue("@Telefono", telefono);
 
             await conn.OpenAsync();
-            int count = (int)await cmd.ExecuteScalarAsync();
-
-            return count > 0;
+            var result = await cmd.ExecuteScalarAsync();
+            return Convert.ToInt32(result) > 0;
         }
 
         public async Task<Caja> ObtenerPorId(int id)
         {
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand("SELECT * FROM CAJAS WHERE IdCaja = @Id", conn);
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand("SELECT * FROM CAJAS WHERE IdCaja = @Id", conn);
 
             cmd.Parameters.AddWithValue("@Id", id);
 
@@ -87,14 +87,16 @@ namespace ProyectoG3.Repository
             {
                 return new Caja
                 {
-                    IdCaja = (int)reader["IdCaja"],
-                    IdComercio = (int)reader["IdComercio"],
+                    IdCaja = Convert.ToInt32(reader["IdCaja"]),
+                    IdComercio = Convert.ToInt32(reader["IdComercio"]),
                     Nombre = reader["Nombre"].ToString()!,
                     Descripcion = reader["Descripcion"].ToString()!,
                     TelefonoSINPE = reader["TelefonoSINPE"].ToString()!,
-                    FechaDeRegistro = (DateTime)reader["FechaDeRegistro"],
-                    FechaDeModificacion = reader["FechaDeModificacion"] as DateTime?,
-                    Estado = (bool)reader["Estado"]
+                    FechaDeRegistro = Convert.ToDateTime(reader["FechaDeRegistro"]),
+                    FechaDeModificacion = reader["FechaDeModificacion"] == DBNull.Value
+                        ? null
+                        : Convert.ToDateTime(reader["FechaDeModificacion"]),
+                    Estado = Convert.ToBoolean(reader["Estado"])
                 };
             }
 
@@ -103,8 +105,8 @@ namespace ProyectoG3.Repository
 
         public async Task<bool> Insertar(Caja caja)
         {
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand(
                 @"INSERT INTO CAJAS 
                 (IdComercio, Nombre, Descripcion, TelefonoSINPE, FechaDeRegistro, Estado)
                 VALUES 
@@ -124,8 +126,8 @@ namespace ProyectoG3.Repository
 
         public async Task<bool> Actualizar(Caja caja)
         {
-            using var conn = new SqlConnection(_connectionString);
-            using var cmd = new SqlCommand(
+            using var conn = new MySqlConnection(_connectionString);
+            using var cmd = new MySqlCommand(
                 @"UPDATE CAJAS SET
                 Nombre = @Nombre,
                 Descripcion = @Descripcion,
