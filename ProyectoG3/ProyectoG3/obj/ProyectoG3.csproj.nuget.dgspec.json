@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "T:\\UNIVERSIDAD\\I Cuatri 2026\\Progra Avanzada\\PROYECTO\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj": {}
+    "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj": {}
   },
   "projects": {
-    "T:\\UNIVERSIDAD\\I Cuatri 2026\\Progra Avanzada\\PROYECTO\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj": {
+    "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\UNIVERSIDAD\\I Cuatri 2026\\Progra Avanzada\\PROYECTO\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj",
+        "projectUniqueName": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj",
         "projectName": "ProyectoG3",
-        "projectPath": "T:\\UNIVERSIDAD\\I Cuatri 2026\\Progra Avanzada\\PROYECTO\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj",
-        "packagesPath": "C:\\Users\\gaelg\\.nuget\\packages\\",
-        "outputPath": "T:\\UNIVERSIDAD\\I Cuatri 2026\\Progra Avanzada\\PROYECTO\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\obj\\",
+        "projectPath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\ProyectoG3.csproj",
+        "packagesPath": "C:\\Users\\ridie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gaelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ridie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,0 +1,41 @@
+﻿@using ProyectoG3.Models
+@model Caja
+
+<h2>Editar Caja</h2>
+
+<div class="text-danger">
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="IdCaja" />
+    <input type="hidden" asp-for="IdComercio" />
+
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control" required />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <input asp-for="Descripcion" class="form-control" required />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Teléfono SINPE</label>
+        <input asp-for="TelefonoSINPE" class="form-control" required maxlength="10" />
+        <span asp-validation-for="TelefonoSINPE" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Estado</label>
+        <select asp-for="Estado" class="form-control">
+            <option value="true">Activo</option>
+            <option value="false">Inactivo</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar cambios</button>
+    <a asp-page="Index" asp-route-idComercio="@Model.IdComercio" class="btn btn-secondary">Volver</a>
+</form>

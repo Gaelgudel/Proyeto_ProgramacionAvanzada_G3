@@ -11,19 +11,19 @@ namespace ProyectoG3.Domain.Entities
 
         [Required]
         [StringLength(10)]
-        public string TelefonoOrigen { get; set; }
+        public required string TelefonoOrigen { get; set; }
 
         [Required]
         [StringLength(200)]
-        public string NombreOrigen { get; set; }
+        public required string NombreOrigen { get; set; }
 
         [Required]
         [StringLength(10)]
-        public string TelefonoDestinatario { get; set; }
+        public required string TelefonoDestinatario { get; set; }
 
         [Required]
         [StringLength(200)]
-        public string NombreDestinatario { get; set; }
+        public required string NombreDestinatario { get; set; }
 
         [Required]
         [Range(0.01, 999999999)]

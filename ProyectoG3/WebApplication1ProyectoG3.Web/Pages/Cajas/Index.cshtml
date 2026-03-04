@@ -1,0 +1,69 @@
+﻿@page "{idComercio:int}"
+@model ProyectoG3.Web.Pages.Cajas.IndexModel
+
+@functions {
+    string EstadoProsa(object estado)
+    {
+        bool v = (bool)estado;
+        return v ? "Activo" : "Inactivo";
+    }
+}
+
+<h2>Cajas - @Model.NombreComercio</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<p>
+    <a asp-page="Create" asp-route-idComercio="@Model.IdComercio" class="btn btn-primary">
+        Registrar Caja
+    </a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Teléfono SINPE</th>
+                <th>Fecha de Registro</th>
+                <th>Estado</th>
+                <th style="width:200px;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Cajas == null || !Model.Cajas.Any())
+            {
+                <tr>
+                    <td colspan="6" class="text-center">No hay cajas registradas para este comercio.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model.Cajas)
+                {
+                    <tr>
+                        <td>@item.Nombre</td>
+                        <td>@(item.Descripcion.Length > 10 ? item.Descripcion.Substring(0, 10) + "..." : item.Descripcion)</td>
+                        <td>@item.TelefonoSINPE</td>
+                        <td>@item.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@EstadoProsa(item.Estado)</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-page="Edit" asp-route-id="@item.IdCaja">Editar</a>
+                            <a class="btn btn-sm btn-info" asp-page="VerSinpe" asp-route-id="@item.IdCaja">Ver SINPE</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<a asp-page="../Comercios/Index" class="btn btn-secondary">Volver a Comercios</a>

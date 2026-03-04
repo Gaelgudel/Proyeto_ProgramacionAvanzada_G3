@@ -1,7 +1,10 @@
-﻿namespace ProyectoG3.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProyectoG3.Models
 {
     public class BitacoraEvento
     {
+        [Key]
         public int IdEvento { get; set; }
         public string TablaDeEvento { get; set; }
         public string TipoDeEvento { get; set; }

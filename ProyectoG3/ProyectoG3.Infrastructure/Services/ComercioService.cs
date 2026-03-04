@@ -2,6 +2,7 @@
 using ProyectoG3.Application.DTOs;
 using ProyectoG3.Application.Interfaces;
 using ProyectoG3.Domain.Entities;
+using ProyectoG3.Domain.Enums;
 using ProyectoG3.Infrastructure.Persistence;
 
 namespace ProyectoG3.Infrastructure.Services
@@ -24,9 +25,9 @@ namespace ProyectoG3.Infrastructure.Services
                 {
                     IdComercio = x.IdComercio,
                     Identificacion = x.Identificacion,
-                    TipoIdentificacion = x.TipoIdentificacion,
+                    TipoIdentificacion = (TipoIdentificacion)x.TipoIdentificacion,
                     Nombre = x.Nombre,
-                    TipoDeComercio = x.TipoDeComercio,
+                    TipoDeComercio = (TipoComercio)x.TipoDeComercio,
                     Telefono = x.Telefono,
                     CorreoElectronico = x.CorreoElectronico,
                     Estado = x.Estado
@@ -43,9 +44,9 @@ namespace ProyectoG3.Infrastructure.Services
                 {
                     IdComercio = x.IdComercio,
                     Identificacion = x.Identificacion,
-                    TipoIdentificacion = x.TipoIdentificacion,
+                    TipoIdentificacion = (TipoIdentificacion)x.TipoIdentificacion,
                     Nombre = x.Nombre,
-                    TipoDeComercio = x.TipoDeComercio,
+                    TipoDeComercio = (TipoComercio)x.TipoDeComercio,
                     Telefono = x.Telefono,
                     CorreoElectronico = x.CorreoElectronico,
                     Direccion = x.Direccion,
@@ -73,9 +74,9 @@ namespace ProyectoG3.Infrastructure.Services
                 var entity = new Comercio
                 {
                     Identificacion = identificacion,
-                    TipoIdentificacion = dto.TipoIdentificacion,
+                    TipoIdentificacion = (int)dto.TipoIdentificacion,
                     Nombre = nombre,
-                    TipoDeComercio = dto.TipoDeComercio,
+                    TipoDeComercio = (int)dto.TipoDeComercio,
                     Telefono = telefono,
                     CorreoElectronico = correo,
                     Direccion = direccion,
@@ -109,7 +110,7 @@ namespace ProyectoG3.Infrastructure.Services
                     return (false, "No se encontró el comercio.");
 
                 entity.Nombre = (dto.Nombre ?? string.Empty).Trim();
-                entity.TipoDeComercio = dto.TipoDeComercio;
+                entity.TipoDeComercio = (int)dto.TipoDeComercio;
                 entity.Telefono = (dto.Telefono ?? string.Empty).Trim();
                 entity.CorreoElectronico = (dto.CorreoElectronico ?? string.Empty).Trim();
                 entity.Direccion = (dto.Direccion ?? string.Empty).Trim();

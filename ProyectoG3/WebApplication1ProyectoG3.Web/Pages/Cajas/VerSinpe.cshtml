@@ -1,0 +1,35 @@
+﻿@model IEnumerable<dynamic>
+
+<h2>SINPE recibidos - @ViewBag.NombreCaja</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Teléfono Origen</th>
+            <th>Nombre Origen</th>
+            <th>Teléfono Destino</th>
+            <th>Nombre Destino</th>
+            <th>Monto</th>
+            <th>Descripción</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TelefonoOrigen</td>
+                <td>@item.NombreOrigen</td>
+                <td>@item.TelefonoDestino</td>
+                <td>@item.NombreDestino</td>
+                <td>@(item.Monto != null ? ((decimal)item.Monto).ToString("C") : "")</td>
+                <td>@item.Descripcion</td>
+                <td>@(item.Fecha != null ? ((DateTime)item.Fecha).ToString("dd/MM/yyyy HH:mm") : "")</td>
+                <td>
+                    @( (item.Estado != null && (int)item.Estado == 0) ? "No sincronizado" : "Sincronizado")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
