@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj": {}
+    "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj",
         "projectName": "ProyectoG3.Application",
-        "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj",
-        "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
               }
             }
           }
@@ -49,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -70,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
         "projectName": "ProyectoG3.Domain",
-        "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
-        "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,7 +95,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -136,24 +134,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
         "projectName": "ProyectoG3.Infrastructure",
-        "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -162,18 +160,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
               },
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
               }
             }
           }
@@ -188,7 +185,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -229,24 +226,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
         "projectName": "ProyectoG3.Web",
-        "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
-        "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -255,21 +252,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Application\\ProyectoG3.Application.csproj"
               },
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj"
               },
-              "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Dylan\\OneDrive\\Documentos\\GitHub\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documentos\\Proyecto progra\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Infrastructure\\ProyectoG3.Infrastructure.csproj"
               }
             }
           }
@@ -284,7 +280,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -318,7 +314,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

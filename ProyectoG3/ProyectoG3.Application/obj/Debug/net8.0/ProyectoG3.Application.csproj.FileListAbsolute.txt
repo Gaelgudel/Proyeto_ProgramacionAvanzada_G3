@@ -30,3 +30,19 @@ C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_Programacion
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
 C:\Users\marie\OneDrive\Documentos\Proyecto progra 1 avance\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.deps.json
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.dll
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.pdb
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.dll
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.pdb
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.AssemblyReference.cache
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfoInputs.cache
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfo.cs
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.CoreCompileInputs.cache
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.sourcelink.json
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\Proyecto.D3334247.Up2Date
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.dll
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
+C:\Users\marie\OneDrive\Documentos\Proyecto progra\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
