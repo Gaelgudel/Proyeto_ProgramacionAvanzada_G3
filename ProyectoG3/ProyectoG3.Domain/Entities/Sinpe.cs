@@ -34,7 +34,7 @@ namespace ProyectoG3.Domain.Entities
 
         public DateTime FechaDeRegistro { get; set; }
 
-        public bool Estado { get; set; } = false; // false = No sincronizado
+        public bool Estado { get; set; } = false; 
     }
 }
 

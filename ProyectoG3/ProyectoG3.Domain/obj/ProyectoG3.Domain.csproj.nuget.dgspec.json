@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {}
+    "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
+    "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+        "projectUniqueName": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
         "projectName": "ProyectoG3.Domain",
-        "projectPath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+        "projectPath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
         "packagesPath": "C:\\Users\\ridie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\obj\\",
+        "outputPath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

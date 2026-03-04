@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "EUpzJvnvaag=",
+  "dgSpecHash": "uoaHEselvkU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+  "projectFilePath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problema al leer el archivo de caché C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\ProyectoG3.Domain\\ProyectoG3.Domain.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

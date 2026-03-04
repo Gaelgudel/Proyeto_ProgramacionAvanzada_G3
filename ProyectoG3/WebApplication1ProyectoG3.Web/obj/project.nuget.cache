@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/1F10BMBmY8=",
+  "dgSpecHash": "Lsnvfq3/kzs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ridie\\OneDrive\\Escritorio\\Programacion avanzada\\github\\Proyecto\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
+  "projectFilePath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ridie\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ridie\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -63,5 +63,15 @@
     "C:\\Users\\ridie\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ridie\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problema al leer el archivo de caché C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Nueva carpeta\\Proyeto_ProgramacionAvanzada_G3\\ProyectoG3\\WebApplication1ProyectoG3.Web\\ProyectoG3.Web.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

@@ -14,8 +14,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 );
 
 builder.Services.AddScoped<IComercioService, ComercioService>();
+builder.Services.AddScoped<ISinpeService, SinpeService>();
 builder.Services.AddScoped<ICajaService, CajaService>();
-
 
 var app = builder.Build();
 
