@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\ProyectoG3",
+    "\\ProyectoG3\\ProyectoG3.Infrastructure",
+    "\\ProyectoG3\\ProyectoG3.Infrastructure\\Services",
     "\\Proyecto_ProgramacionAvanzada_G3"
   ],
+  "SelectedNode": "\\ProyectoG3\\ProyectoG3.Infrastructure\\Services\\ComercioService.cs",
   "PreviewInSolutionExplorer": false
 }
