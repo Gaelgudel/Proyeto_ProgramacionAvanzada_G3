@@ -31,7 +31,7 @@ namespace ProyectoG3.Web.Pages.SINPE
             }
 
             TempData["Mensaje"] = "Pago registrado correctamente.";
-            return RedirectToPage();
+            return RedirectToPage("/SINPE/Registrar");
         }
     }
 }
