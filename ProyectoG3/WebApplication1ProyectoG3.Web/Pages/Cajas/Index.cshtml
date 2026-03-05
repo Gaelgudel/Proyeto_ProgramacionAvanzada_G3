@@ -2,7 +2,7 @@
 @model ProyectoG3.Web.Pages.Cajas.IndexModel
 
 @functions {
-    string EstadoProsa(object estado)
+    string EstadoTexto(object estado)
     {
         bool v = (bool)estado;
         return v ? "Activo" : "Inactivo";
@@ -54,7 +54,7 @@
                         <td>@(item.Descripcion.Length > 10 ? item.Descripcion.Substring(0, 10) + "..." : item.Descripcion)</td>
                         <td>@item.TelefonoSINPE</td>
                         <td>@item.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
-                        <td>@EstadoProsa(item.Estado)</td>
+                        <td>@EstadoTexto(item.Estado)</td>
                         <td>
                             <a class="btn btn-sm btn-warning" asp-page="Edit" asp-route-id="@item.IdCaja">Editar</a>
                             <a class="btn btn-sm btn-info" asp-page="VerSinpe" asp-route-id="@item.IdCaja">Ver SINPE</a>

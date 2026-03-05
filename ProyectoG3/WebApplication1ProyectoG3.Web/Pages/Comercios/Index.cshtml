@@ -2,14 +2,14 @@
 @model WebApplication1ProyectoG3.Web.Pages.Comercios.IndexModel
 
 @functions {
-    string TipoIdentificacionProsa(object tipo)
+    string TipoIdentificacionTexto(object tipo)
     {
         // tipo viene como enum, lo convertimos a int
         int v = (int)tipo;
         return v == 1 ? "Física" : "Jurídica";
     }
 
-    string TipoComercioProsa(object tipo)
+    string TipoComercioTexto(object tipo)
     {
         int v = (int)tipo;
         return v switch
@@ -63,9 +63,9 @@
             {
                 <tr>
                     <td>@item.Identificacion</td>
-                    <td>@TipoIdentificacionProsa(item.TipoIdentificacion)</td>
+                    <td>@TipoIdentificacionTexto(item.TipoIdentificacion)</td>
                     <td>@item.Nombre</td>
-                    <td>@TipoComercioProsa(item.TipoDeComercio)</td>
+                    <td>@TipoComercioTexto(item.TipoDeComercio)</td>
                     <td>@item.Telefono</td>
                     <td>@item.CorreoElectronico</td>
                     <td>@(item.Estado ? "Activo" : "Inactivo")</td>

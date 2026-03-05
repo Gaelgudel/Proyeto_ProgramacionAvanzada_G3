@@ -2,7 +2,7 @@
 @model WebApplication1ProyectoG3.Web.Pages.Comercios.EditModel
 
 @functions {
-    string TipoComercioProsa(object tipo)
+    string TipoComercioTexto(object tipo)
     {
         int v = (int)tipo;
         return v switch
@@ -34,7 +34,7 @@
         <select asp-for="Comercio.TipoDeComercio" class="form-control" required>
             @foreach (var tipo in Model.TiposComercio)
             {
-                <option value="@tipo">@TipoComercioProsa(tipo)</option>
+                <option value="@tipo">@TipoComercioTexto(tipo)</option>
             }
         </select>
     </div>

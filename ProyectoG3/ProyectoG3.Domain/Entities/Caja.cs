@@ -15,7 +15,6 @@ namespace ProyectoG3.Models
         public DateTime? FechaDeModificacion { get; set; }
         public bool Estado { get; set; }
         public virtual Comercio? Comercio { get; set; }
-        public virtual ICollection<Sinpe> Sinpes { get; set; } = new List<Sinpe>();
+       // public virtual ICollection<Sinpe> Sinpes { get; set; } = new List<Sinpe>();
     }
 }
-

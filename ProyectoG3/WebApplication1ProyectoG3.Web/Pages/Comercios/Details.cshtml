@@ -2,13 +2,13 @@
 @model WebApplication1ProyectoG3.Web.Pages.Comercios.DetailsModel
 
 @functions {
-    string TipoIdentificacionProsa(object tipo)
+    string TipoIdentificacionTexto(object tipo)
     {
         int v = (int)tipo;
         return v == 1 ? "Física" : "Jurídica";
     }
 
-    string TipoComercioProsa(object tipo)
+    string TipoComercioTexto(object tipo)
     {
         int v = (int)tipo;
         return v switch
@@ -35,13 +35,13 @@ else
         <dd class="col-sm-9">@Model.Comercio.Identificacion</dd>
 
         <dt class="col-sm-3">Tipo Identificación</dt>
-        <dd class="col-sm-9">@TipoIdentificacionProsa(Model.Comercio.TipoIdentificacion)</dd>
+        <dd class="col-sm-9">@TipoIdentificacionTexto(Model.Comercio.TipoIdentificacion)</dd>
 
         <dt class="col-sm-3">Nombre</dt>
         <dd class="col-sm-9">@Model.Comercio.Nombre</dd>
 
         <dt class="col-sm-3">Tipo Comercio</dt>
-        <dd class="col-sm-9">@TipoComercioProsa(Model.Comercio.TipoDeComercio)</dd>
+        <dd class="col-sm-9">@TipoComercioTexto(Model.Comercio.TipoDeComercio)</dd>
 
         <dt class="col-sm-3">Teléfono</dt>
         <dd class="col-sm-9">@Model.Comercio.Telefono</dd>
