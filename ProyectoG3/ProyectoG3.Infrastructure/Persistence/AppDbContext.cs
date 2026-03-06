@@ -21,17 +21,5 @@ namespace ProyectoG3.Infrastructure.Persistence
         public DbSet<BitacoraEvento> BitacoraEventos { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<BitacoraEvento>(entity =>
-            {
-                entity.Property(e => e.TablaDeEvento).HasMaxLength(20).IsRequired();
-                entity.Property(e => e.TipoDeEvento).HasMaxLength(20).IsRequired();
-                entity.Property(e => e.DescripcionDeEvento).HasColumnType("longtext").IsRequired();
-                entity.Property(e => e.StackTrace).HasColumnType("longtext").IsRequired();
-                entity.Property(e => e.DatosAnteriores).HasColumnType("longtext");
-                entity.Property(e => e.DatosPosteriores).HasColumnType("longtext");
-            });
-        }
     }
 }
