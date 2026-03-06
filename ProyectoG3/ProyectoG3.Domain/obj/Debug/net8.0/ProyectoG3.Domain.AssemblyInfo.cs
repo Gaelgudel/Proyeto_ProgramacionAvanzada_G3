@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoG3.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+421d7d7410e42ef57ec72bacfd57b4a47256f2a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f46c7160f5dca1fa93b9a8123d918af2aba733f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoG3.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoG3.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

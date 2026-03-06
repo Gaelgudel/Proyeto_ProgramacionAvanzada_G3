@@ -1,23 +1,12 @@
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.deps.json
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfoInputs.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfo.cs
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.csproj.CoreCompileInputs.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\refint\ProyectoG3.Domain.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ref\ProyectoG3.Domain.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.deps.json
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfoInputs.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfo.cs
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.csproj.CoreCompileInputs.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.sourcelink.json
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\refint\ProyectoG3.Domain.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ref\ProyectoG3.Domain.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.deps.json
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\bin\Debug\net8.0\ProyectoG3.Domain.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfoInputs.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.AssemblyInfo.cs
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.csproj.CoreCompileInputs.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.sourcelink.json
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\refint\ProyectoG3.Domain.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ProyectoG3.Domain.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Domain\obj\Debug\net8.0\ref\ProyectoG3.Domain.dll

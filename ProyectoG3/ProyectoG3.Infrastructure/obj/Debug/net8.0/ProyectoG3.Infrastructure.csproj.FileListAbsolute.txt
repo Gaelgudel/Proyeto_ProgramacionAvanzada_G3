@@ -1,39 +1,20 @@
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.deps.json
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.runtimeconfig.json
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfo.cs
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\Proyecto.3B50EF7E.Up2Date
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\refint\ProyectoG3.Infrastructure.dll
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.pdb
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.genruntimeconfig.cache
-C:\Users\firom\Desktop\pruevbas\Proyeto_ProgramacionAvanzada_G3-2ef9eff32f621965d4c3f2f6227c6083c27d2850\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ref\ProyectoG3.Infrastructure.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.deps.json
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.runtimeconfig.json
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.AssemblyReference.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfoInputs.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfo.cs
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.CoreCompileInputs.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.sourcelink.json
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\Proyecto.3B50EF7E.Up2Date
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\refint\ProyectoG3.Infrastructure.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.pdb
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.genruntimeconfig.cache
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ref\ProyectoG3.Infrastructure.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.deps.json
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.runtimeconfig.json
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Infrastructure.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Application.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\bin\Debug\net8.0\ProyectoG3.Domain.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.AssemblyInfo.cs
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.sourcelink.json
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\Proyecto.3B50EF7E.Up2Date
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\refint\ProyectoG3.Infrastructure.dll
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.pdb
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ProyectoG3.Infrastructure.genruntimeconfig.cache
+C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Infrastructure\obj\Debug\net8.0\ref\ProyectoG3.Infrastructure.dll
