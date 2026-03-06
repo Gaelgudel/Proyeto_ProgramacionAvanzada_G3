@@ -15,7 +15,7 @@ namespace ProyectoG3.Infrastructure.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Caja>> GetByComercioIdAsync(int idComercio)
+        public async Task<IEnumerable<Caja>> ListarPorComercio(int idComercio)
         {
             return await _context.Cajas
                 .Where(c => c.IdComercio == idComercio)
@@ -23,7 +23,7 @@ namespace ProyectoG3.Infrastructure.Services
                 .ToListAsync();
         }
 
-        public async Task<Caja?> GetByIdAsync(int id)
+        public async Task<Caja?> ObtenerPorId(int id)
         {
             return await _context.Cajas
                 .Include(c => c.Comercio)

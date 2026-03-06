@@ -10,10 +10,12 @@ namespace ProyectoG3.Infrastructure.Services
     public class ComercioService : IComercioService
     {
         private readonly AppDbContext _context;
+        private readonly IBitacoraService _bitacora;
 
-        public ComercioService(AppDbContext context)
+        public ComercioService(AppDbContext context, IBitacoraService bitacora)
         {
             _context = context;
+            _bitacora = bitacora;
         }
 
         public async Task<List<ComercioListDto>> GetAllAsync()
@@ -88,6 +90,8 @@ namespace ProyectoG3.Infrastructure.Services
                 _context.Comercios.Add(entity);
                 await _context.SaveChangesAsync();
 
+                await _bitacora.RegistrarEventoAsync("Comercios", "Registrar", "El comercio fue creado con éxito", null, entity);
+
                 return (true, "Comercio registrado correctamente.");
             }
             catch (DbUpdateException)
@@ -95,8 +99,9 @@ namespace ProyectoG3.Infrastructure.Services
                 // Por si el índice único se dispara (backup)
                 return (false, "No se pudo registrar. La identificación ya existe.");
             }
-            catch
+            catch (Exception ex)
             {
+                await _bitacora.RegistrarErrorAsync("Comercios", ex.Message, ex.StackTrace ?? "No tiene un stack trace");
                 return (false, "Ocurrió un error inesperado al registrar el comercio.");
             }
         }
@@ -109,6 +114,15 @@ namespace ProyectoG3.Infrastructure.Services
                 if (entity is null)
                     return (false, "No se encontró el comercio.");
 
+                var datosAnteriores = new
+                {
+                    entity.Nombre,
+                    entity.TipoDeComercio,
+                    entity.Telefono,
+                    entity.CorreoElectronico,
+                    entity.Direccion,
+                    entity.Estado
+                };
                 entity.Nombre = (dto.Nombre ?? string.Empty).Trim();
                 entity.TipoDeComercio = (int)dto.TipoDeComercio;
                 entity.Telefono = (dto.Telefono ?? string.Empty).Trim();
@@ -119,10 +133,13 @@ namespace ProyectoG3.Infrastructure.Services
 
                 await _context.SaveChangesAsync();
 
+                await _bitacora.RegistrarEventoAsync("Comercios", "Editar", "Comercio actualizado", datosAnteriores, entity);
+
                 return (true, "Comercio actualizado correctamente.");
             }
-            catch
+            catch (Exception ex)
             {
+                await _bitacora.RegistrarErrorAsync("Comercios", ex.Message, ex.StackTrace ?? "no tiene stack trace");
                 return (false, "Ocurrió un error inesperado al actualizar el comercio.");
             }
         }

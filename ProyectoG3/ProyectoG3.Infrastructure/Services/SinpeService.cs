@@ -34,5 +34,12 @@ namespace ProyectoG3.Infrastructure.Services
 
             return true;
         }
+
+        public async Task<IEnumerable<Sinpe>> ObtenerSinpePorTelefono(string telefono)
+        {
+            return await _context.Sinpes
+                .Where(s => s.TelefonoOrigen == telefono || s.TelefonoDestinatario == telefono)
+                .ToListAsync();
+        }
     }
 }

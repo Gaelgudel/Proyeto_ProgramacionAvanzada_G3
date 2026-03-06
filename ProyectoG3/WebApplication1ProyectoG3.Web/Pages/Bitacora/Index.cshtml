@@ -1,0 +1,40 @@
+﻿@page
+@model ProyectoG3.Web.Pages.Bitacora.IndexModel
+@{
+    ViewData["Title"] = "Bitácora de los eventos";
+}
+<div class="container mt-4">
+    <h2>Bitácora de eventos</h2>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Tabla</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Datos</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Eventos != null && Model.Eventos.Any())
+            {
+                @foreach (var item in Model.Eventos)
+                {
+                <tr>
+                    <td>@item.IdEvento</td>
+                    <td>@item.TablaDeEvento</td>
+                    <td>@item.TipoDeEvento</td>
+                    <td>@item.FechaDeEvento.ToString("g")</td>
+                    <td>@item.DescripcionDeEvento</td>
+                    <td>
+                        <small><strong>Anterior:</strong> @item.DatosAnteriores</small><br/>
+                        <small><strong>Posterior:</strong> @item.DatosPosteriores</small>
+                    </td>
+                </tr>
+            }
+            }
+            
+        </tbody>
+    </table>
+</div>

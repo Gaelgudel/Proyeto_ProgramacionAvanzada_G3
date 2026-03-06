@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Entities\BitacoraEvento.cs~RF727f78c1.TMP" />
+  </ItemGroup>
+
 </Project>
