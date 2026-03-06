@@ -20,11 +20,9 @@
     <div class="alert alert-danger">@TempData["Error"]</div>
 }
 
-<p>
-    <a asp-page="Create" asp-route-idComercio="@Model.IdComercio" class="btn btn-primary">
-        Registrar Caja
-    </a>
-</p>
+<a asp-page="/Cajas/registrar" asp-route-idComercio="@Model.IdComercio" class="btn btn-primary">
+    Registrar Caja
+</a>
 
 <div class="table-responsive">
     <table class="table table-bordered table-striped">

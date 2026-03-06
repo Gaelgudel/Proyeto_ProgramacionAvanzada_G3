@@ -1,32 +1,32 @@
-﻿@using ProyectoG3.Models
-@model Caja
+﻿@page "{idComercio:int}"
+@model ProyectoG3.Web.Pages.Cajas.RegistrarModel
 
 <h2>Registrar Nueva Caja</h2>
 
-@if (ViewBag.Error != null)
+@if (TempData["Error"] != null)
 {
     <div class="alert alert-danger">
-        @ViewBag.Error
+        @TempData["Error"]
     </div>
 }
 
-<form asp-action="Registrar" method="post">
+<form method="post">
 
-    <input type="hidden" asp-for="IdComercio" />
+    <input type="hidden" asp-for="Caja.IdComercio" />
 
     <div class="mb-3">
         <label class="form-label">Nombre:</label>
-        <input asp-for="Nombre" class="form-control" required />
+        <input asp-for="Caja.Nombre" class="form-control" required />
     </div>
 
     <div class="mb-3">
         <label class="form-label">Descripción:</label>
-        <textarea asp-for="Descripcion" class="form-control" required></textarea>
+        <textarea asp-for="Caja.Descripcion" class="form-control" required></textarea>
     </div>
 
     <div class="mb-3">
         <label class="form-label">Teléfono SINPE:</label>
-        <input asp-for="TelefonoSINPE"
+        <input asp-for="Caja.TelefonoSINPE"
                class="form-control"
                maxlength="10"
                pattern="[0-9]{8,10}"
@@ -35,7 +35,7 @@
 
     <div class="mb-3">
         <label class="form-label">Estado</label>
-        <select asp-for="Estado" class="form-control">
+        <select asp-for="Caja.Estado" class="form-control">
             <option value="true">Activo</option>
             <option value="false">Inactivo</option>
         </select>
@@ -45,7 +45,7 @@
         Guardar Caja
     </button>
 
-    <a asp-action="VerCajas" asp-route-idComercio="@Model.IdComercio"
+    <a asp-page="/Cajas/Index" asp-route-idComercio="@Model.IdComercio"
        class="btn btn-secondary">
         Volver
     </a>

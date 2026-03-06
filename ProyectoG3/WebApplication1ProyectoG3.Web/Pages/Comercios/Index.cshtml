@@ -72,7 +72,9 @@
                     <td>
                         <a class="btn btn-sm btn-warning" asp-page="Edit" asp-route-id="@item.IdComercio">Editar</a>
                         <a class="btn btn-sm btn-info" asp-page="Details" asp-route-id="@item.IdComercio">Detalles</a>
-                        <a class="btn btn-sm btn-secondary" href="#">Ver cajas</a>
+                        <a href="/Cajas/Index/@item.IdComercio" class="btn btn-success">
+                            Ver Cajas
+                        </a>
                     </td>
                 </tr>
             }
