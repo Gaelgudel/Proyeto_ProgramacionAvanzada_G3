@@ -1,35 +1,54 @@
-﻿@model IEnumerable<dynamic>
+﻿@page "{id:int}"
+@model ProyectoG3.Web.Pages.Cajas.VerSinpeModel
+@{
+    ViewData["Title"] = "SINPE recibidos";
+}
 
-<h2>SINPE recibidos - @ViewBag.NombreCaja</h2>
+<h2>SINPE recibidos — @Model.Caja.Nombre (@Model.Caja.TelefonoSINPE)</h2>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Teléfono Origen</th>
-            <th>Nombre Origen</th>
-            <th>Teléfono Destino</th>
-            <th>Nombre Destino</th>
-            <th>Monto</th>
-            <th>Descripción</th>
-            <th>Fecha</th>
-            <th>Estado</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.TelefonoOrigen</td>
-                <td>@item.NombreOrigen</td>
-                <td>@item.TelefonoDestino</td>
-                <td>@item.NombreDestino</td>
-                <td>@(item.Monto != null ? ((decimal)item.Monto).ToString("C") : "")</td>
-                <td>@item.Descripcion</td>
-                <td>@(item.Fecha != null ? ((DateTime)item.Fecha).ToString("dd/MM/yyyy HH:mm") : "")</td>
-                <td>
-                    @( (item.Estado != null && (int)item.Estado == 0) ? "No sincronizado" : "Sincronizado")
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<a asp-page="Index" asp-route-idComercio="@Model.Caja.IdComercio" class="btn btn-secondary mb-3">
+    ← Volver a Cajas
+</a>
+
+@if (!Model.Sinpes.Any())
+{
+    <div class="alert alert-info">No hay pagos SINPE registrados para esta caja.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table">
+                <tr>
+                    <th>Teléfono Origen</th>
+                    <th>Nombre Origen</th>
+                    <th>Teléfono Destino</th>
+                    <th>Nombre Destino</th>
+                    <th>Monto</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Sinpes)
+                {
+                    <tr>
+                        <td>@item.TelefonoOrigen</td>
+                        <td>@item.NombreOrigen</td>
+                        <td>@item.TelefonoDestinatario</td>
+                        <td>@item.NombreDestinatario</td>
+                        <td>@item.Monto.ToString("C")</td>
+                        <td>@(item.Descripcion ?? "—")</td>
+                        <td>@item.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            <span class="badge @(item.Estado ? "bg-success" : "bg-secondary")">
+                                @(item.Estado ? "Sincronizado" : "No sincronizado")
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

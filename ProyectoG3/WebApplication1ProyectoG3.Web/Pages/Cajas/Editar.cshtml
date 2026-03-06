@@ -1,41 +1,52 @@
-﻿@using ProyectoG3.Models
-@model Caja
+﻿@page "{id:int}"
+@model ProyectoG3.Web.Pages.Cajas.EditarModel
+@{
+    ViewData["Title"] = "Editar Caja";
+}
 
-<h2>Editar Caja</h2>
+<div class="container mt-4" style="max-width:600px;">
+    <h2 class="mb-4">Editar Caja</h2>
 
-<div class="text-danger">
+    <form method="post">
+        <input type="hidden" asp-for="Caja.IdCaja" />
+        <input type="hidden" asp-for="Caja.IdComercio" />
+
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+        <div class="mb-3">
+            <label asp-for="Caja.Nombre" class="form-label fw-semibold">Nombre</label>
+            <input asp-for="Caja.Nombre" class="form-control" maxlength="100" />
+            <span asp-validation-for="Caja.Nombre" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Caja.Descripcion" class="form-label fw-semibold">Descripción</label>
+            <textarea asp-for="Caja.Descripcion" class="form-control" maxlength="150" rows="3"></textarea>
+            <span asp-validation-for="Caja.Descripcion" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Caja.TelefonoSINPE" class="form-label fw-semibold">Teléfono SINPE</label>
+            <input asp-for="Caja.TelefonoSINPE" class="form-control" maxlength="10" />
+            <span asp-validation-for="Caja.TelefonoSINPE" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Caja.Estado" class="form-label fw-semibold">Estado</label>
+            <select asp-for="Caja.Estado" class="form-select">
+                <option value="true">Activo</option>
+                <option value="false">Inactivo</option>
+            </select>
+        </div>
+
+        <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            <a asp-page="Index" asp-route-idComercio="@Model.Caja.IdComercio"
+               class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
 </div>
 
-<form method="post">
-    <input type="hidden" asp-for="IdCaja" />
-    <input type="hidden" asp-for="IdComercio" />
-
-    <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input asp-for="Nombre" class="form-control" required />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Descripción</label>
-        <input asp-for="Descripcion" class="form-control" required />
-        <span asp-validation-for="Descripcion" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Teléfono SINPE</label>
-        <input asp-for="TelefonoSINPE" class="form-control" required maxlength="10" />
-        <span asp-validation-for="TelefonoSINPE" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Estado</label>
-        <select asp-for="Estado" class="form-control">
-            <option value="true">Activo</option>
-            <option value="false">Inactivo</option>
-        </select>
-    </div>
-
-    <button type="submit" class="btn btn-success">Guardar cambios</button>
-    <a asp-page="Index" asp-route-idComercio="@Model.IdComercio" class="btn btn-secondary">Volver</a>
-</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
