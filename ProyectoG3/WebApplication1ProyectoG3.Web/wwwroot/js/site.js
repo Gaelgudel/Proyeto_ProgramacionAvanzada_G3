@@ -1,4 +1,27 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
 
-// Write your JavaScript code.
+    // ENTER pasa al siguiente campo
+    $("input").on("keydown", function (e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            var inputs = $("input:visible");
+            var index = inputs.index(this);
+            inputs.eq(index + 1).focus();
+        }
+    });
+
+    // SPACE o ENTER en botones
+    $(document).on("keydown", "button", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            $(this).click();
+        }
+    });
+
+});
+
+
+//  Mensaje accesible 
+function mostrarMensaje(mensaje) {
+    $("#mensajeAccesible").text(mensaje);
+}
