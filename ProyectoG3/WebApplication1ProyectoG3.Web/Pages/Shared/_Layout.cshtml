@@ -17,6 +17,181 @@
     </div>
 
     <header>
+        <style>
+
+                    :root {
+                        --bg: #ffffff;
+                        --texto: #212529;
+                        --muted: #6c757d;
+                        --hr: #dee2e6;
+                        --btn-tema-bg: #212529;
+                        --btn-tema-text: #ffffff;
+                    }
+
+                    body.dark-mode {
+                        --bg: #1a1a2e;
+                        --texto: #e0e0e0;
+                        --muted: #a0a0b0;
+                        --hr: #2e2e4e;
+                        --btn-tema-bg: #e0e0e0;
+                        --btn-tema-text: #1a1a2e;
+                    }
+
+                    body {
+                        background-color: var(--bg) !important;
+                        color: var(--texto) !important;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                    }
+
+                    hr {
+                        border-color: var(--hr) !important;
+                        transition: border-color 0.3s ease;
+                    }
+
+                    body.dark-mode .text-muted {
+                        color: var(--muted) !important;
+                    }
+
+                    body.dark-mode .btn-outline-primary {
+                        color: #7eb8f7;
+                        border-color: #7eb8f7;
+                    }
+
+                        body.dark-mode .btn-outline-primary:hover {
+                            background-color: #7eb8f7;
+                            color: #1a1a2e;
+                        }
+
+                    body.dark-mode .btn-outline-secondary {
+                        color: #a0a0b0;
+                        border-color: #a0a0b0;
+                    }
+
+                        body.dark-mode .btn-outline-secondary:hover {
+                            background-color: #a0a0b0;
+                            color: #1a1a2e;
+                        }
+
+                    /*Botón de tema*/
+                    #btn-tema {
+                        background-color: var(--btn-tema-bg);
+                        color: var(--btn-tema-text);
+                        border: none;
+                        border-radius: 40px;
+                        padding: 0.4rem 1rem;
+                        font-size: 0.875rem;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                    }
+
+                        #btn-tema:focus-visible {
+                            outline: 3px solid #0d6efd;
+                            outline-offset: 3px;
+                        }
+
+        </style>
+
+        <div id="anunciador"
+             role="status"
+             aria-live="polite"
+             aria-atomic="true"
+             style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">
+        </div>
+
+
+        <div class="d-flex justify-content-end px-3 pt-3">
+            <button id="btn-tema"
+                    aria-pressed="false"
+                    aria-label="Activar modo oscuro">
+                Modo Oscuro
+            </button>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+
+
+            const Modelo = {
+            tema: localStorage.getItem('tema') || 'claro',
+
+            guardar() {
+            localStorage.setItem('tema', this.tema);
+            }
+            };
+
+
+            const Vista = {
+
+            aplicarTema(tema) {
+            if (tema === 'oscuro') {
+
+     
+            $('body').addClass('dark-mode');
+
+            $('#btn-tema')
+            .attr('aria-pressed', 'true')
+            .attr('aria-label',   'Activar modo claro')
+            .text(' Modo Claro');
+
+            } else {
+
+            //vuelve al tema claro cuando quita la clase
+            $('body').removeClass('dark-mode');
+
+            // Actualiza el botón
+            $('#btn-tema')
+            .attr('aria-pressed', 'false')
+            .attr('aria-label',   'Activar modo oscuro')
+            .text(' Modo Oscuro');
+            }
+            },
+
+            //W3C WAI-ARIA aria-live)
+            anunciar(mensaje) {
+            $('#anunciador').text('');
+            setTimeout(() => $('#anunciador').text(mensaje), 50);
+            }
+            };
+
+
+      
+            const Controlador = {
+
+            init() {
+
+            Vista.aplicarTema(Modelo.tema);
+
+            $('#btn-tema').on('click', function () {
+
+            Modelo.tema = (Modelo.tema === 'claro') ? 'oscuro' : 'claro';
+
+            Vista.aplicarTema(Modelo.tema);
+
+            Vista.anunciar(
+            Modelo.tema === 'oscuro'
+            ? 'Modo oscuro activado'
+            : 'Modo claro activado'
+            );
+
+            Modelo.guardar();
+            });
+
+            //  Atajo de teclado: Alt + D
+            $(document).on('keydown', function (e) {
+            if (e.altKey && e.key.toLowerCase() === 'd') {
+            e.preventDefault();
+            $('#btn-tema').trigger('click');
+            }
+            });
+            }
+            };
+            Controlador.init();
+
+            });
+
+        </script>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">WebApplication1ProyectoG3.Web</a>
@@ -46,7 +221,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2026 - WebApplication1ProyectoG3.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2026 - ProyectoG3.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
