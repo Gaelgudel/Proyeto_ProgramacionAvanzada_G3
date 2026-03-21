@@ -7,13 +7,105 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1ProyectoG3.Web.styles.css" asp-append-version="true" />
+
+    <style>
+            /* Claro*/
+            :root {
+                --bg: #ffffff;
+                --texto: #212529;
+                --muted: #6c757d;
+                --btn-tema-bg: #212529;
+                --btn-tema-text: #ffffff;
+            }
+
+            /* Oscuro*/
+            body.dark-mode {
+                --bg: #1a1a2e;
+                --texto: #e0e0e0;
+                --muted: #a0a0b0;
+                --btn-tema-bg: #e0e0e0;
+                --btn-tema-text: #1a1a2e;
+            }
+
+            body {
+                background-color: var(--bg) !important;
+                color: var(--texto) !important;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                body.dark-mode .text-muted {
+                    color: var(--muted) !important;
+                }
+
+                body.dark-mode .table {
+                    color: var(--texto) !important;
+                }
+
+                    body.dark-mode .table thead th {
+                        background-color: #252545 !important;
+                        color: #e0e0e0 !important;
+                        border-color: #3a3a5c !important;
+                    }
+
+                    body.dark-mode .table td,
+                    body.dark-mode .table th {
+                        color: #e0e0e0 !important;
+                        border-color: #3a3a5c !important;
+                    }
+
+                body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+                    background-color: #252545 !important;
+                    color: #e0e0e0 !important;
+                }
+
+                body.dark-mode .navbar {
+                    background-color: #12122a !important;
+                }
+
+                body.dark-mode .nav-link,
+                body.dark-mode .navbar-brand {
+                    color: #e0e0e0 !important;
+                }
+
+            /* Boton */
+            #btn-tema {
+                background-color: var(--btn-tema-bg);
+                color: var(--btn-tema-text);
+                border: none;
+                border-radius: 6px;
+                padding: 4px 12px;
+                font-size: 0.85rem;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+            }
+    </style>
+
 </head>
 <body>
 
-    <!-- Botones cambio tamaño letra -->
-    <div style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
-        <button id="btnAumentar" class="btn btn-sm btn-primary">A+</button>
-        <button id="btnDisminuir" class="btn btn-sm btn-secondary">A-</button>
+    <!--todos los botones juntos-->
+    <div class="d-flex justify-content-end align-items-center gap-2 px-3 py-2">
+
+        <span style="font-size:0.82rem; color:var(--muted);">Texto:</span>
+
+        <button id="btnDisminuir" class="btn btn-sm btn-secondary"
+                aria-label="Disminuir tamaño de fuente">
+            A−
+        </button>
+
+        <span id="lblFuente" style="font-size:0.82rem; min-width:38px; text-align:center;">100%</span>
+
+        <button id="btnAumentar" class="btn btn-sm btn-primary"
+                aria-label="Aumentar tamaño de fuente">
+            A+
+        </button>
+
+        <button id="btn-tema"
+                aria-pressed="false"
+                aria-label="Activar modo oscuro">
+             Modo Oscuro
+        </button>
+
     </div>
 
     <header>
@@ -56,6 +148,82 @@
 
     <!-- Llamado de accesibilidad -->
     <script src="~/js/accesibilidad.js"></script>
+
+
+    <script>
+    $(function () {
+
+    const Modelo = {
+    tema:     localStorage.getItem('tema')     || 'claro',
+    fontSize: parseInt(localStorage.getItem('fontSize')) || 100,
+    guardar() {
+    localStorage.setItem('tema',     this.tema);
+    localStorage.setItem('fontSize', this.fontSize);
+    }
+    };
+
+
+    const Vista = {
+    aplicarTema(tema) {
+    if (tema === 'oscuro') {
+    $('body').addClass('dark-mode');
+    $('#btn-tema').attr('aria-pressed', 'true')
+    .attr('aria-label', 'Activar modo claro')
+    .text(' Modo Claro');
+    } else {
+    $('body').removeClass('dark-mode');
+    $('#btn-tema').attr('aria-pressed', 'false')
+    .attr('aria-label', 'Activar modo oscuro')
+    .text(' Modo Oscuro');
+    }
+    },
+    aplicarFuente(size) {
+    $('html').css('font-size', size + '%');
+    $('#lblFuente').text(size + '%');
+    $('#btnDisminuir').prop('disabled', size <= 80);
+    $('#btnAumentar').prop('disabled',  size >= 160);
+    }
+    };
+
+
+    const Controlador = {
+    init() {
+    Vista.aplicarTema(Modelo.tema);
+    Vista.aplicarFuente(Modelo.fontSize);
+
+    $('#btn-tema').on('click', function () {
+    Modelo.tema = Modelo.tema === 'claro' ? 'oscuro' : 'claro';
+    Vista.aplicarTema(Modelo.tema);
+    Modelo.guardar();
+    });
+
+    $('#btnAumentar').on('click', function () {
+    if (Modelo.fontSize >= 160) return;
+    Modelo.fontSize += 10;
+    Vista.aplicarFuente(Modelo.fontSize);
+    Modelo.guardar();
+    });
+
+    $('#btnDisminuir').on('click', function () {
+    if (Modelo.fontSize <= 80) return;
+    Modelo.fontSize -= 10;
+    Vista.aplicarFuente(Modelo.fontSize);
+    Modelo.guardar();
+    });
+
+    // Atajo de teclado Alt+D 
+        $(document).on('keydown', function (e) {
+        if (e.altKey && e.key.toLowerCase() === 'd') {
+        e.preventDefault();
+        $('#btn-tema').trigger('click');
+        }
+        });
+        }
+        };
+
+        Controlador.init();
+        });
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
