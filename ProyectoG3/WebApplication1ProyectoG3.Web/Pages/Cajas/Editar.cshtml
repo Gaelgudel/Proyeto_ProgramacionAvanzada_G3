@@ -11,38 +11,93 @@
         <input type="hidden" asp-for="Caja.IdCaja" />
         <input type="hidden" asp-for="Caja.IdComercio" />
 
-        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
-
-        <div class="mb-3">
-            <label asp-for="Caja.Nombre" class="form-label fw-semibold">Nombre</label>
-            <input asp-for="Caja.Nombre" class="form-control" maxlength="100" />
-            <span asp-validation-for="Caja.Nombre" class="text-danger small"></span>
+        <div asp-validation-summary="ModelOnly"
+             class="alert alert-danger"
+             role="alert"
+             aria-live="assertive">
         </div>
 
         <div class="mb-3">
-            <label asp-for="Caja.Descripcion" class="form-label fw-semibold">Descripción</label>
-            <textarea asp-for="Caja.Descripcion" class="form-control" maxlength="150" rows="3"></textarea>
-            <span asp-validation-for="Caja.Descripcion" class="text-danger small"></span>
+            <label asp-for="Caja.Nombre" class="form-label fw-semibold"></label>
+
+            <input asp-for="Caja.Nombre"
+                   class="form-control"
+                   maxlength="100"
+                   aria-describedby="nombreHelp nombreError" />
+
+            <small id="nombreHelp" class="form-text text-muted">
+                Ingrese el nombre de la caja (máximo 100 caracteres)
+            </small>
+
+            <span asp-validation-for="Caja.Nombre"
+                  id="nombreError"
+                  class="text-danger small"
+                  role="alert">
+            </span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="Caja.TelefonoSINPE" class="form-label fw-semibold">Teléfono SINPE</label>
-            <input asp-for="Caja.TelefonoSINPE" class="form-control" maxlength="10" />
-            <span asp-validation-for="Caja.TelefonoSINPE" class="text-danger small"></span>
+            <label asp-for="Caja.Descripcion" class="form-label fw-semibold"></label>
+
+            <textarea asp-for="Caja.Descripcion"
+                      class="form-control"
+                      maxlength="150"
+                      rows="3"
+                      aria-describedby="descripcionHelp descripcionError"></textarea>
+
+            <small id="descripcionHelp" class="form-text text-muted">
+                Descripción breve (máximo 150 caracteres)
+            </small>
+
+            <span asp-validation-for="Caja.Descripcion"
+                  id="descripcionError"
+                  class="text-danger small"
+                  role="alert">
+            </span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="Caja.Estado" class="form-label fw-semibold">Estado</label>
-            <select asp-for="Caja.Estado" class="form-select">
+            <label asp-for="Caja.TelefonoSINPE" class="form-label fw-semibold"></label>
+
+            <input asp-for="Caja.TelefonoSINPE"
+                   class="form-control"
+                   maxlength="10"
+                   aria-describedby="telefonoHelp telefonoError" />
+
+            <small id="telefonoHelp" class="form-text text-muted">
+                Ingrese un número SINPE válido (hasta 10 dígitos)
+            </small>
+
+            <span asp-validation-for="Caja.TelefonoSINPE"
+                  id="telefonoError"
+                  class="text-danger small"
+                  role="alert">
+            </span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Caja.Estado" class="form-label fw-semibold"></label>
+
+            <select asp-for="Caja.Estado"
+                    class="form-select"
+                    aria-describedby="estadoHelp">
                 <option value="true">Activo</option>
                 <option value="false">Inactivo</option>
             </select>
+
+            <small id="estadoHelp" class="form-text text-muted">
+                Seleccione si la caja estará activa o inactiva
+            </small>
         </div>
 
         <div class="d-flex gap-2 mt-4">
             <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-            <a asp-page="Index" asp-route-idComercio="@Model.Caja.IdComercio"
-               class="btn btn-secondary">Cancelar</a>
+
+            <a asp-page="Index"
+               asp-route-idComercio="@Model.Caja.IdComercio"
+               class="btn btn-secondary">
+                Cancelar
+            </a>
         </div>
     </form>
 </div>

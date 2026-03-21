@@ -5,7 +5,7 @@
 
 @if (TempData["Mensaje"] != null)
 {
-    <div class="alert alert-success">
+    <div class="alert alert-success" role="alert" aria-live="polite">
         @TempData["Mensaje"]
     </div>
 }
@@ -13,33 +13,122 @@
 <form method="post">
 
     <div class="mb-3">
-        <label>Teléfono Origen</label>
-        <input asp-for="Sinpe.TelefonoOrigen" class="form-control" required />
+        <label asp-for="Sinpe.TelefonoOrigen" class="form-label"></label>
+
+        <input asp-for="Sinpe.TelefonoOrigen"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="telOrigenHelp telOrigenError" />
+
+        <small id="telOrigenHelp" class="form-text text-muted">
+            Ingrese el número de teléfono que envía el dinero
+        </small>
+
+        <span asp-validation-for="Sinpe.TelefonoOrigen"
+              id="telOrigenError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label>Nombre Origen</label>
-        <input asp-for="Sinpe.NombreOrigen" class="form-control" required />
+        <label asp-for="Sinpe.NombreOrigen" class="form-label"></label>
+
+        <input asp-for="Sinpe.NombreOrigen"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="nombreOrigenHelp nombreOrigenError" />
+
+        <small id="nombreOrigenHelp" class="form-text text-muted">
+            Nombre de la persona que envía el pago
+        </small>
+
+        <span asp-validation-for="Sinpe.NombreOrigen"
+              id="nombreOrigenError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label>Teléfono Destinatario</label>
-        <input asp-for="Sinpe.TelefonoDestinatario" class="form-control" required />
+        <label asp-for="Sinpe.TelefonoDestinatario" class="form-label"></label>
+
+        <input asp-for="Sinpe.TelefonoDestinatario"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="telDestinoHelp telDestinoError" />
+
+        <small id="telDestinoHelp" class="form-text text-muted">
+            Número de teléfono que recibe el dinero
+        </small>
+
+        <span asp-validation-for="Sinpe.TelefonoDestinatario"
+              id="telDestinoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label>Nombre Destinatario</label>
-        <input asp-for="Sinpe.NombreDestinatario" class="form-control" required />
+        <label asp-for="Sinpe.NombreDestinatario" class="form-label"></label>
+
+        <input asp-for="Sinpe.NombreDestinatario"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="nombreDestinoHelp nombreDestinoError" />
+
+        <small id="nombreDestinoHelp" class="form-text text-muted">
+            Nombre de la persona que recibe el pago
+        </small>
+
+        <span asp-validation-for="Sinpe.NombreDestinatario"
+              id="nombreDestinoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label>Monto</label>
-        <input asp-for="Sinpe.Monto" type="number" class="form-control" required />
+        <label asp-for="Sinpe.Monto" class="form-label"></label>
+
+        <input asp-for="Sinpe.Monto"
+               type="number"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="montoHelp montoError" />
+
+        <small id="montoHelp" class="form-text text-muted">
+            Ingrese el monto en colones (₡)
+        </small>
+
+        <span asp-validation-for="Sinpe.Monto"
+              id="montoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label>Descripción</label>
-        <input asp-for="Sinpe.Descripcion" class="form-control" />
+        <label asp-for="Sinpe.Descripcion" class="form-label"></label>
+
+        <input asp-for="Sinpe.Descripcion"
+               class="form-control"
+               aria-describedby="descripcionHelp descripcionError" />
+
+        <small id="descripcionHelp" class="form-text text-muted">
+            (Opcional) Agregue un detalle del pago
+        </small>
+
+        <span asp-validation-for="Sinpe.Descripcion"
+              id="descripcionError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <br />
@@ -48,4 +137,3 @@
     <a asp-page="/Index" class="btn btn-secondary">Volver</a>
 
 </form>
-
