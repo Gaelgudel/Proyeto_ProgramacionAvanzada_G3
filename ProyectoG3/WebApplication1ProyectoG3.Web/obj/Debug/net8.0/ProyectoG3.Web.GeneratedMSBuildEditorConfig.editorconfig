@@ -1,7 +1,5 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -11,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoG3.Web
 build_property.RootNamespace = ProyectoG3.Web
-build_property.ProjectDir = C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\
+build_property.ProjectDir = C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web
+build_property.MSBuildProjectDirectory = C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Bitacora/Index.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Bitacora/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQml0YWNvcmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/Editar.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FqYXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/Index.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FqYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/registrar.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FqYXNccmVnaXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/VerCajas.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/VerCajas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FqYXNcVmVyQ2FqYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/VerSinpe.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Cajas/VerSinpe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FqYXNcVmVyU2lucGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Create.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tZXJjaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Details.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tZXJjaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Edit.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tZXJjaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Index.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Comercios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tZXJjaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Details.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Error.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Index.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Privacy.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/SINPE/Registrar.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/SINPE/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU0lOUEVcUmVnaXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/_ViewImports.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/_ViewStart.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/keyli/Documents/Progra Avanzada proyecto/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Shared/_Layout.cshtml]
+[C:/Users/Dylan/OneDrive/Documentos/GitHub/Proyeto_ProgramacionAvanzada_G3/ProyectoG3/WebApplication1ProyectoG3.Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-p4x8moz85v

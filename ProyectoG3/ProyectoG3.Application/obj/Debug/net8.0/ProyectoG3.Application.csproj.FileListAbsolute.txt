@@ -14,3 +14,19 @@ C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.deps.json
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.pdb
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.pdb
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.AssemblyReference.cache
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfoInputs.cache
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfo.cs
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.sourcelink.json
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\Proyecto.D3334247.Up2Date
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
+C:\Users\Dylan\OneDrive\Documentos\GitHub\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
