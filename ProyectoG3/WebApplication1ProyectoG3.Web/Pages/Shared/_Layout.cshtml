@@ -1,227 +1,478 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication1ProyectoG3.Web</title>
+    <title>@ViewData["Title"] - SINPE G3</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1ProyectoG3.Web.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
 
     <style>
-            /* Claro*/
-            :root {
-                --bg: #ffffff;
-                --texto: #212529;
-                --muted: #6c757d;
-                --btn-tema-bg: #212529;
-                --btn-tema-text: #ffffff;
+        :root {
+            --sidebar-bg: linear-gradient(160deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+            --accent: #e94560;
+            --accent-hover: #c62a47;
+            --bg-main: #f0f4ff;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a2e;
+            --text-muted: #888;
+            --border: #f0f0f0;
+            --nav-text: rgba(255,255,255,0.6);
+            --nav-active-bg: linear-gradient(135deg, #e94560, #c62a47);
+        }
+
+        body.dark-mode {
+            --bg-main: #0d0d1a;
+            --bg-card: #1a1a2e;
+            --text-primary: #e0e0e0;
+            --text-muted: #a0a0b0;
+            --border: #2a2a4a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-main) !important;
+            color: var(--text-primary) !important;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0 !important;
+        }
+
+        .app-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 230px;
+            background: var(--sidebar-bg);
+            padding: 24px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            z-index: 1000;
+        }
+
+        .sidebar-logo {
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            padding: 0 10px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+            .sidebar-logo span {
+                color: var(--accent);
             }
 
-            /* Oscuro*/
-            body.dark-mode {
-                --bg: #1a1a2e;
-                --texto: #e0e0e0;
-                --muted: #a0a0b0;
-                --btn-tema-bg: #e0e0e0;
-                --btn-tema-text: #1a1a2e;
+        .nav-item-side {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 12px;
+            border-radius: 10px;
+            color: var(--nav-text);
+            font-size: 13.5px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+            .nav-item-side:hover {
+                background: rgba(255,255,255,0.08);
+                color: #fff;
+                text-decoration: none;
             }
 
-            body {
-                background-color: var(--bg) !important;
-                color: var(--texto) !important;
-                transition: background-color 0.3s ease, color 0.3s ease;
+            .nav-item-side.active {
+                background: var(--nav-active-bg);
+                color: #fff;
+                font-weight: 600;
             }
 
-                body.dark-mode .text-muted {
-                    color: var(--muted) !important;
-                }
-
-                body.dark-mode .table {
-                    color: var(--texto) !important;
-                }
-
-                    body.dark-mode .table thead th {
-                        background-color: #252545 !important;
-                        color: #e0e0e0 !important;
-                        border-color: #3a3a5c !important;
-                    }
-
-                    body.dark-mode .table td,
-                    body.dark-mode .table th {
-                        color: #e0e0e0 !important;
-                        border-color: #3a3a5c !important;
-                    }
-
-                body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
-                    background-color: #252545 !important;
-                    color: #e0e0e0 !important;
-                }
-
-                body.dark-mode .navbar {
-                    background-color: #12122a !important;
-                }
-
-                body.dark-mode .nav-link,
-                body.dark-mode .navbar-brand {
-                    color: #e0e0e0 !important;
-                }
-
-            /* Boton */
-            #btn-tema {
-                background-color: var(--btn-tema-bg);
-                color: var(--btn-tema-text);
-                border: none;
-                border-radius: 6px;
-                padding: 4px 12px;
-                font-size: 0.85rem;
-                cursor: pointer;
-                transition: background-color 0.3s, color 0.3s;
+            .nav-item-side svg {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                opacity: 0.85;
             }
+
+        .sidebar-spacer {
+            flex: 1;
+        }
+
+        .access-bar {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 14px;
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .access-label {
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 0 4px;
+        }
+
+        .access-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        #lblFuente {
+            font-size: 11px;
+            color: rgba(255,255,255,0.7);
+            min-width: 36px;
+            text-align: center;
+        }
+
+        #btnAumentar, #btnDisminuir {
+            background: rgba(255,255,255,0.12);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+            #btnAumentar:hover, #btnDisminuir:hover {
+                background: rgba(255,255,255,0.22);
+            }
+
+            #btnAumentar:disabled, #btnDisminuir:disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+
+        #btn-tema {
+            background: rgba(233,69,96,0.2);
+            color: #e94560;
+            border: 1px solid rgba(233,69,96,0.4);
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            text-align: center;
+        }
+
+            #btn-tema:hover {
+                background: rgba(233,69,96,0.35);
+            }
+
+        .main-content {
+            margin-left: 230px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-body {
+            flex: 1;
+            padding: 32px 28px;
+        }
+
+        body.dark-mode .table {
+            color: var(--text-primary) !important;
+        }
+
+            body.dark-mode .table thead th {
+                background-color: #252545 !important;
+                color: #e0e0e0 !important;
+                border-color: #3a3a5c !important;
+            }
+
+            body.dark-mode .table td,
+            body.dark-mode .table th {
+                color: #e0e0e0 !important;
+                border-color: #3a3a5c !important;
+            }
+
+        body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+            background-color: #252545 !important;
+            color: #e0e0e0 !important;
+        }
+
+        body.dark-mode .card {
+            background-color: var(--bg-card) !important;
+            border-color: var(--border) !important;
+        }
+
+        body.dark-mode .form-control,
+        body.dark-mode .form-select {
+            background-color: #252545 !important;
+            color: #e0e0e0 !important;
+            border-color: #3a3a5c !important;
+        }
+
+        body.dark-mode h1, body.dark-mode h2,
+        body.dark-mode h3, body.dark-mode h4,
+        body.dark-mode h5, body.dark-mode h6,
+        body.dark-mode p, body.dark-mode label {
+            color: var(--text-primary) !important;
+        }
+
+        body.dark-mode .text-muted {
+            color: var(--text-muted) !important;
+        }
+
+        .footer {
+            background: rgba(0,0,0,0.05);
+            border-top: 1px solid var(--border);
+            padding: 12px 28px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        body.dark-mode .footer {
+            background: rgba(255,255,255,0.02);
+            border-color: var(--border);
+        }
+
+        input:focus, button:focus, select:focus, textarea:focus {
+            outline: 3px solid #e94560;
+            background-color: rgba(233,69,96,0.05);
+        }
+
+        .btn:focus, .btn:active:focus {
+            box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #e94560;
+        }
+
+        .card {
+            background: var(--bg-card) !important;
+            border-radius: 16px !important;
+            border: 1px solid var(--border) !important;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+        }
+
+        @@media (max-width: 768px) {
+            .sidebar {
+                width: 60px;
+            }
+
+            .sidebar-logo, .nav-item-side span,
+            .access-label, #lblFuente, #btn-tema {
+                display: none;
+            }
+
+            .main-content {
+                margin-left: 60px;
+            }
+
+            .main-body {
+                padding: 20px 14px;
+            }
+        }
     </style>
-
 </head>
 <body>
+    <div class="app-wrapper">
 
-    <!--todos los botones juntos-->
-    <div class="d-flex justify-content-end align-items-center gap-2 px-3 py-2">
+        <nav class="sidebar">
+            <div class="sidebar-logo">SINPE<span>G3</span></div>
 
-        <span style="font-size:0.82rem; color:var(--muted);">Texto:</span>
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Index") ? "active" : "")"
+               asp-page="/Index">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                <span>Inicio</span>
+            </a>
 
-        <button id="btnDisminuir" class="btn btn-sm btn-secondary"
-                aria-label="Disminuir tamaño de fuente">
-            A−
-        </button>
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Comercios") ? "active" : "")"
+               asp-page="/Comercios/Index">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span>Comercios</span>
+            </a>
 
-        <span id="lblFuente" style="font-size:0.82rem; min-width:38px; text-align:center;">100%</span>
+            <!-- Cajas apunta a Comercios porque necesita un comercio seleccionado primero -->
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Cajas") ? "active" : "")"
+               asp-page="/Comercios/Index">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>Cajas</span>
+            </a>
 
-        <button id="btnAumentar" class="btn btn-sm btn-primary"
-                aria-label="Aumentar tamaño de fuente">
-            A+
-        </button>
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/SINPE") ? "active" : "")"
+               asp-page="/SINPE/Registrar">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>SINPE</span>
+            </a>
 
-        <button id="btn-tema"
-                aria-pressed="false"
-                aria-label="Activar modo oscuro">
-             Modo Oscuro
-        </button>
+            <!-- Config. Comercio -->
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/ConfiguracionComercio") ? "active" : "")"
+               asp-page="/Comercios/Index">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Config. Comercio</span>
+            </a>
 
-    </div>
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Usuarios") ? "active" : "")"
+               href="#">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <span>Usuarios</span>
+            </a>
 
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">WebApplication1ProyectoG3.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Reportes") ? "active" : "")"
+               href="#">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Reportes</span>
+            </a>
+
+            <a class="nav-item-side @(Context.Request.Path.StartsWithSegments("/Bitacora") ? "active" : "")"
+               asp-page="/Bitacora/Index">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <span>Bitácora</span>
+            </a>
+
+            <div class="sidebar-spacer"></div>
+
+            <div class="access-bar">
+                <div class="access-label">Accesibilidad</div>
+                <div class="access-row">
+                    <button id="btnDisminuir" aria-label="Disminuir tamaño de fuente">A−</button>
+                    <span id="lblFuente">100%</span>
+                    <button id="btnAumentar" aria-label="Aumentar tamaño de fuente">A+</button>
                 </div>
+                <button id="btn-tema" aria-pressed="false" aria-label="Activar modo oscuro">
+                    🌙 Modo Oscuro
+                </button>
             </div>
         </nav>
-    </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        <div class="main-content">
+            <div class="main-body">
+                @RenderBody()
+            </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - WebApplication1ProyectoG3.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <footer class="footer">
+                &copy; 2026 - SINPE G3 -
+                <a asp-area="" asp-page="/Privacy" style="color: var(--accent);">Privacy</a>
+            </footer>
         </div>
-    </footer>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
-    <!-- Llamado de accesibilidad -->
     <script src="~/js/accesibilidad.js"></script>
 
-
     <script>
-    $(function () {
+        $(function () {
+            const Modelo = {
+                tema:     localStorage.getItem('tema')     || 'claro',
+                fontSize: parseInt(localStorage.getItem('fontSize')) || 100,
+                guardar() {
+                    localStorage.setItem('tema',     this.tema);
+                    localStorage.setItem('fontSize', this.fontSize);
+                }
+            };
 
-    const Modelo = {
-    tema:     localStorage.getItem('tema')     || 'claro',
-    fontSize: parseInt(localStorage.getItem('fontSize')) || 100,
-    guardar() {
-    localStorage.setItem('tema',     this.tema);
-    localStorage.setItem('fontSize', this.fontSize);
-    }
-    };
+            const Vista = {
+                aplicarTema(tema) {
+                    if (tema === 'oscuro') {
+                        $('body').addClass('dark-mode');
+                        $('#btn-tema')
+                            .attr('aria-pressed', 'true')
+                            .attr('aria-label', 'Activar modo claro')
+                            .text('☀️ Modo Claro');
+                    } else {
+                        $('body').removeClass('dark-mode');
+                        $('#btn-tema')
+                            .attr('aria-pressed', 'false')
+                            .attr('aria-label', 'Activar modo oscuro')
+                            .text('🌙 Modo Oscuro');
+                    }
+                },
+                aplicarFuente(size) {
+                    $('html').css('font-size', size + '%');
+                    $('#lblFuente').text(size + '%');
+                    $('#btnDisminuir').prop('disabled', size <= 80);
+                    $('#btnAumentar').prop('disabled',  size >= 160);
+                }
+            };
 
+            const Controlador = {
+                init() {
+                    Vista.aplicarTema(Modelo.tema);
+                    Vista.aplicarFuente(Modelo.fontSize);
 
-    const Vista = {
-    aplicarTema(tema) {
-    if (tema === 'oscuro') {
-    $('body').addClass('dark-mode');
-    $('#btn-tema').attr('aria-pressed', 'true')
-    .attr('aria-label', 'Activar modo claro')
-    .text(' Modo Claro');
-    } else {
-    $('body').removeClass('dark-mode');
-    $('#btn-tema').attr('aria-pressed', 'false')
-    .attr('aria-label', 'Activar modo oscuro')
-    .text(' Modo Oscuro');
-    }
-    },
-    aplicarFuente(size) {
-    $('html').css('font-size', size + '%');
-    $('#lblFuente').text(size + '%');
-    $('#btnDisminuir').prop('disabled', size <= 80);
-    $('#btnAumentar').prop('disabled',  size >= 160);
-    }
-    };
+                    $('#btn-tema').on('click', function () {
+                        Modelo.tema = Modelo.tema === 'claro' ? 'oscuro' : 'claro';
+                        Vista.aplicarTema(Modelo.tema);
+                        Modelo.guardar();
+                    });
 
+                    $('#btnAumentar').on('click', function () {
+                        if (Modelo.fontSize >= 160) return;
+                        Modelo.fontSize += 10;
+                        Vista.aplicarFuente(Modelo.fontSize);
+                        Modelo.guardar();
+                    });
 
-    const Controlador = {
-    init() {
-    Vista.aplicarTema(Modelo.tema);
-    Vista.aplicarFuente(Modelo.fontSize);
+                    $('#btnDisminuir').on('click', function () {
+                        if (Modelo.fontSize <= 80) return;
+                        Modelo.fontSize -= 10;
+                        Vista.aplicarFuente(Modelo.fontSize);
+                        Modelo.guardar();
+                    });
 
-    $('#btn-tema').on('click', function () {
-    Modelo.tema = Modelo.tema === 'claro' ? 'oscuro' : 'claro';
-    Vista.aplicarTema(Modelo.tema);
-    Modelo.guardar();
-    });
+                    $(document).on('keydown', function (e) {
+                        if (e.altKey && e.key.toLowerCase() === 'd') {
+                            e.preventDefault();
+                            $('#btn-tema').trigger('click');
+                        }
+                    });
+                }
+            };
 
-    $('#btnAumentar').on('click', function () {
-    if (Modelo.fontSize >= 160) return;
-    Modelo.fontSize += 10;
-    Vista.aplicarFuente(Modelo.fontSize);
-    Modelo.guardar();
-    });
-
-    $('#btnDisminuir').on('click', function () {
-    if (Modelo.fontSize <= 80) return;
-    Modelo.fontSize -= 10;
-    Vista.aplicarFuente(Modelo.fontSize);
-    Modelo.guardar();
-    });
-
-    // Atajo de teclado Alt+D 
-        $(document).on('keydown', function (e) {
-        if (e.altKey && e.key.toLowerCase() === 'd') {
-        e.preventDefault();
-        $('#btn-tema').trigger('click');
-        }
-        });
-        }
-        };
-
-        Controlador.init();
+            Controlador.init();
         });
     </script>
 
