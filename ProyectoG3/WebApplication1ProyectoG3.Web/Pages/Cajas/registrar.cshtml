@@ -5,7 +5,7 @@
 
 @if (TempData["Error"] != null)
 {
-    <div class="alert alert-danger">
+    <div class="alert alert-danger" role="alert">
         @TempData["Error"]
     </div>
 }
@@ -15,37 +15,89 @@
     <input type="hidden" asp-for="Caja.IdComercio" />
 
     <div class="mb-3">
-        <label class="form-label">Nombre:</label>
-        <input asp-for="Caja.Nombre" class="form-control" required />
+        <label asp-for="Caja.Nombre" class="form-label"></label>
+
+        <input asp-for="Caja.Nombre"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="nombreHelp nombreError" />
+
+        <small id="nombreHelp" class="form-text text-muted">
+            Ingrese el nombre de la caja
+        </small>
+
+        <span asp-validation-for="Caja.Nombre"
+              id="nombreError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Descripción:</label>
-        <textarea asp-for="Caja.Descripcion" class="form-control" required></textarea>
+        <label asp-for="Caja.Descripcion" class="form-label"></label>
+
+        <textarea asp-for="Caja.Descripcion"
+                  class="form-control"
+                  required
+                  aria-required="true"
+                  aria-describedby="descripcionHelp descripcionError"></textarea>
+
+        <small id="descripcionHelp" class="form-text text-muted">
+            Describa brevemente el propósito de la caja
+        </small>
+
+        <span asp-validation-for="Caja.Descripcion"
+              id="descripcionError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Teléfono SINPE:</label>
+        <label asp-for="Caja.TelefonoSINPE" class="form-label"></label>
+
         <input asp-for="Caja.TelefonoSINPE"
                class="form-control"
                maxlength="10"
                pattern="[0-9]{8,10}"
-               required />
+               required
+               aria-required="true"
+               aria-describedby="telefonoHelp telefonoError" />
+
+        <small id="telefonoHelp" class="form-text text-muted">
+            Ingrese un número de 8 a 10 dígitos sin espacios
+        </small>
+
+        <span asp-validation-for="Caja.TelefonoSINPE"
+              id="telefonoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Estado</label>
-        <select asp-for="Caja.Estado" class="form-control">
+        <label asp-for="Caja.Estado" class="form-label"></label>
+
+        <select asp-for="Caja.Estado"
+                class="form-control"
+                aria-describedby="estadoHelp">
+
             <option value="true">Activo</option>
             <option value="false">Inactivo</option>
         </select>
+
+        <small id="estadoHelp" class="form-text text-muted">
+            Seleccione si la caja estará activa o no
+        </small>
     </div>
 
     <button type="submit" class="btn btn-success">
         Guardar Caja
     </button>
 
-    <a asp-page="/Cajas/Index" asp-route-idComercio="@Model.IdComercio"
+    <a asp-page="/Cajas/Index"
+       asp-route-idComercio="@Model.IdComercio"
        class="btn btn-secondary">
         Volver
     </a>

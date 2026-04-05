@@ -17,7 +17,7 @@
 
 <h2>Editar Comercio</h2>
 
-<div class="text-danger">
+<div class="text-danger" role="alert" aria-live="assertive">
     @Html.ValidationSummary()
 </div>
 
@@ -25,41 +25,119 @@
     <input type="hidden" asp-for="Comercio.IdComercio" />
 
     <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input asp-for="Comercio.Nombre" class="form-control" required />
+        <label asp-for="Comercio.Nombre" class="form-label"></label>
+
+        <input asp-for="Comercio.Nombre"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="nombreHelp nombreError" />
+
+        <small id="nombreHelp" class="form-text text-muted">
+            Ingrese el nombre del comercio
+        </small>
+
+        <span asp-validation-for="Comercio.Nombre"
+              id="nombreError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Tipo de Comercio</label>
-        <select asp-for="Comercio.TipoDeComercio" class="form-control" required>
+        <label asp-for="Comercio.TipoDeComercio" class="form-label"></label>
+
+        <select asp-for="Comercio.TipoDeComercio"
+                class="form-control"
+                required
+                aria-required="true"
+                aria-describedby="tipoComercioHelp">
+
             @foreach (var tipo in Model.TiposComercio)
             {
                 <option value="@tipo">@TipoComercioTexto(tipo)</option>
             }
         </select>
+
+        <small id="tipoComercioHelp" class="form-text text-muted">
+            Seleccione el tipo de comercio
+        </small>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Teléfono</label>
-        <input asp-for="Comercio.Telefono" class="form-control" required />
+        <label asp-for="Comercio.Telefono" class="form-label"></label>
+
+        <input asp-for="Comercio.Telefono"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="telefonoHelp telefonoError" />
+
+        <small id="telefonoHelp" class="form-text text-muted">
+            Ingrese un número telefónico válido
+        </small>
+
+        <span asp-validation-for="Comercio.Telefono"
+              id="telefonoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Correo</label>
-        <input asp-for="Comercio.CorreoElectronico" type="email" class="form-control" required />
+        <label asp-for="Comercio.CorreoElectronico" class="form-label"></label>
+
+        <input asp-for="Comercio.CorreoElectronico"
+               type="email"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="correoHelp correoError" />
+
+        <small id="correoHelp" class="form-text text-muted">
+            Ingrese un correo electrónico válido
+        </small>
+
+        <span asp-validation-for="Comercio.CorreoElectronico"
+              id="correoError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Dirección</label>
-        <input asp-for="Comercio.Direccion" class="form-control" required />
+        <label asp-for="Comercio.Direccion" class="form-label"></label>
+
+        <input asp-for="Comercio.Direccion"
+               class="form-control"
+               required
+               aria-required="true"
+               aria-describedby="direccionHelp direccionError" />
+
+        <small id="direccionHelp" class="form-text text-muted">
+            Ingrese la dirección del comercio
+        </small>
+
+        <span asp-validation-for="Comercio.Direccion"
+              id="direccionError"
+              class="text-danger"
+              role="alert">
+        </span>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Estado</label>
-        <select asp-for="Comercio.Estado" class="form-control">
+        <label asp-for="Comercio.Estado" class="form-label"></label>
+
+        <select asp-for="Comercio.Estado"
+                class="form-control"
+                aria-describedby="estadoHelp">
             <option value="true">Activo</option>
             <option value="false">Inactivo</option>
         </select>
+
+        <small id="estadoHelp" class="form-text text-muted">
+            Seleccione si el comercio está activo o inactivo
+        </small>
     </div>
 
     <button type="submit" class="btn btn-success">Guardar cambios</button>

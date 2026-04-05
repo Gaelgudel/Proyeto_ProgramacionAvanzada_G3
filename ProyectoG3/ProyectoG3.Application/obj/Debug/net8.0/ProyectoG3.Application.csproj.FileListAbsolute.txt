@@ -14,3 +14,19 @@ C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
 C:\Users\keyli\Documents\Progra Avanzada proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.deps.json
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.dll
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Application.pdb
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.dll
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\bin\Debug\net8.0\ProyectoG3.Domain.pdb
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.AssemblyReference.cache
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfoInputs.cache
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.AssemblyInfo.cs
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.csproj.CoreCompileInputs.cache
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.sourcelink.json
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\Proyecto.D3334247.Up2Date
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.dll
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\refint\ProyectoG3.Application.dll
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ProyectoG3.Application.pdb
+D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\ProyectoG3.Application\obj\Debug\net8.0\ref\ProyectoG3.Application.dll
