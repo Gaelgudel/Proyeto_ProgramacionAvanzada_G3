@@ -1,0 +1,40 @@
+﻿@page "{id:int}"
+@model ProyectoG3.Web.Pages.Usuarios.EditModel
+
+<h2>Editar Usuario</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Usuario.IdUsuario" />
+
+    <div class="form-group">
+        <label>Nombres</label>
+        <input asp-for="Usuario.Nombres" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Primer Apellido</label>
+        <input asp-for="Usuario.PrimerApellido" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Segundo Apellido</label>
+        <input asp-for="Usuario.SegundoApellido" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Identificación</label>
+        <input asp-for="Usuario.Identificacion" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Correo</label>
+        <input asp-for="Usuario.CorreoElectronico" class="form-control" />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-warning">Actualizar</button>
+    <a asp-page="Index" class="btn btn-secondary">Volver</a>
+
+</form>

@@ -18,6 +18,7 @@ builder.Services.AddScoped<ISinpeService, SinpeService>();
 builder.Services.AddScoped<ICajaService, CajaService>();
 builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 builder.Services.AddScoped<IConfiguracionComercioService, ConfiguracionComercioService>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 

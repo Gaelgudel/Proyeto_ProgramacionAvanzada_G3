@@ -21,6 +21,7 @@ namespace ProyectoG3.Infrastructure.Persistence
         public DbSet<BitacoraEvento> BitacoraEventos { get; set; }
 
         public DbSet<ConfiguracionComercio> ConfiguracionesComercio { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

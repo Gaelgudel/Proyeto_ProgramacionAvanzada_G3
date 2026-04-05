@@ -1,0 +1,38 @@
+﻿@page
+@model ProyectoG3.Web.Pages.Usuarios.IndexModel
+
+<h2>Lista de Usuarios</h2>
+
+<a asp-page="Create" class="btn btn-primary mb-2">Nuevo Usuario</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombres</th>
+            <th>Primer Apellido</th>
+            <th>Segundo Apellido</th>
+            <th>Identificación</th>
+            <th>Correo</th>
+            <th>Fecha Registro</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model.Usuarios)
+        {
+            <tr>
+                <td>@u.Nombres</td>
+                <td>@u.PrimerApellido</td>
+                <td>@u.SegundoApellido</td>
+                <td>@u.Identificacion</td>
+                <td>@u.CorreoElectronico</td>
+                <td>@u.FechaDeRegistro</td>
+                <td>@(u.Estado ? "Activo" : "Inactivo")</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@u.IdUsuario" class="btn btn-warning btn-sm">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+﻿
+@page
+@model ProyectoG3.Web.Pages.Usuarios.CreateModel
+
+
+<h2>Registrar Usuario</h2>
+
+<form method="post">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label>Nombres</label>
+        <input asp-for="Usuario.Nombres" class="form-control" required />
+        <span asp-validation-for="Usuario.Nombres" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Primer Apellido</label>
+        <input asp-for="Usuario.PrimerApellido" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Segundo Apellido</label>
+        <input asp-for="Usuario.SegundoApellido" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Identificación</label>
+        <input asp-for="Usuario.Identificacion" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Correo</label>
+        <input asp-for="Usuario.CorreoElectronico" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Comercio</label>
+        <input asp-for="Usuario.IdComercio" class="form-control" required />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Volver</a>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
