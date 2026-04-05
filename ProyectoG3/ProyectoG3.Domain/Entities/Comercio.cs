@@ -21,5 +21,8 @@ namespace ProyectoG3.Domain.Entities
         public DateTime? FechaDeModificacion { get; set; }
         public bool Estado { get; set; } 
         public virtual ICollection<Caja> CAJAS { get; set; } = new List<Caja>();
+        public virtual ConfiguracionComercio? Configuracion { get; set; }
+
+
     }
 }

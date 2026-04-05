@@ -20,6 +20,8 @@ namespace ProyectoG3.Infrastructure.Persistence
         public DbSet<Caja> Cajas { get; set; }
         public DbSet<BitacoraEvento> BitacoraEventos { get; set; }
 
+        public DbSet<ConfiguracionComercio> ConfiguracionesComercio { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BitacoraEvento>(entity =>

@@ -1,14 +1,11 @@
 ﻿@page
 @model WebApplication1ProyectoG3.Web.Pages.Comercios.IndexModel
-
 @functions {
     string TipoIdentificacionTexto(object tipo)
     {
-        // tipo viene como enum, lo convertimos a int
         int v = (int)tipo;
         return v == 1 ? "Física" : "Jurídica";
     }
-
     string TipoComercioTexto(object tipo)
     {
         int v = (int)tipo;
@@ -21,9 +18,7 @@
         };
     }
 }
-
 <h2>Lista de Comercios</h2>
-
 @if (TempData["Success"] != null)
 {
     <div class="alert alert-success">@TempData["Success"]</div>
@@ -32,11 +27,9 @@
 {
     <div class="alert alert-danger">@TempData["Error"]</div>
 }
-
 <p>
     <a asp-page="Create" class="btn btn-primary">Registrar Comercio</a>
 </p>
-
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -47,7 +40,7 @@
             <th>Teléfono</th>
             <th>Correo</th>
             <th>Estado</th>
-            <th style="width:260px;">Acciones</th>
+            <th style="width:320px;">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -72,8 +65,13 @@
                     <td>
                         <a class="btn btn-sm btn-warning" asp-page="Edit" asp-route-id="@item.IdComercio">Editar</a>
                         <a class="btn btn-sm btn-info" asp-page="Details" asp-route-id="@item.IdComercio">Detalles</a>
-                        <a href="/Cajas/Index/@item.IdComercio" class="btn btn-success">
+                        <a href="/Cajas/Index/@item.IdComercio" class="btn btn-sm btn-success">
                             Ver Cajas
+                        </a>
+                        <a asp-page="/ConfiguracionComercio/Index"
+                           asp-route-idComercio="@item.IdComercio"
+                           class="btn btn-sm btn-secondary">
+                            Configuración
                         </a>
                     </td>
                 </tr>

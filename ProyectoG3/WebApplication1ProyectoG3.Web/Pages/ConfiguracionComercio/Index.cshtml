@@ -1,0 +1,87 @@
+﻿@page "{idComercio:int}"
+@model ProyectoG3.Web.Pages.ConfiguracionComercio.IndexModel
+@{
+    ViewData["Title"] = "Configuración de Comercio";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-1">Configuración de Comercio</h2>
+    <h5 class="text-muted mb-4">Comercio: @Model.Comercio?.Nombre</h5>
+
+    @if (TempData["Success"] is string msg)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @msg
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @* Solo mostrar botón Agregar si no tiene configuración aún *@
+    @if (!Model.Configuraciones.Any())
+    {
+        <a asp-page="Create" asp-route-idComercio="@Model.IdComercio" class="btn btn-primary mb-3">
+            + Agregar Configuración
+        </a>
+    }
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Comercio</th>
+                <th>Tipo de Configuración</th>
+                <th>Comisión</th>
+                <th>Fecha de Registro</th>
+                <th>Fecha de Modificación</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Configuraciones.Any())
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">
+                        No hay configuraciones registradas para este comercio.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var config in Model.Configuraciones)
+                {
+                    <tr>
+                        <td>@config.NombreComercio</td>
+                        <td>@config.TipoConfiguracionTexto</td>
+                        <td>@config.Comision%</td>
+                        <td>@config.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            @(config.FechaDeModificacion.HasValue
+                                                ? config.FechaDeModificacion.Value.ToString("dd/MM/yyyy HH:mm")
+                                                : "—")
+                </td>
+                <td>
+                    @if (config.Estado)
+                            {
+                                <span class="badge bg-success">Activo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Inactivo</span>
+                            }
+                        </td>
+                        <td>
+                            <a asp-page="Edit"
+                               asp-route-idConfiguracion="@config.IdConfiguracion"
+                               asp-route-idComercio="@Model.IdComercio"
+                               class="btn btn-sm btn-warning">
+                                Editar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <a asp-page="/Comercios/Index" class="btn btn-secondary mt-2">← Volver a Comercios</a>
+</div>

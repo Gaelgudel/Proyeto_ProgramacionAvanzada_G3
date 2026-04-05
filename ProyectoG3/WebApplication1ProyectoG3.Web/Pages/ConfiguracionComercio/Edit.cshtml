@@ -1,0 +1,58 @@
+﻿@page "{idConfiguracion:int}"
+@model ProyectoG3.Web.Pages.ConfiguracionComercio.EditModel
+@{
+    ViewData["Title"] = "Editar Configuración";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-1">Editar Configuración</h2>
+    <h5 class="text-muted mb-4">Comercio: @Model.Comercio?.Nombre</h5>
+
+    <div class="card shadow-sm p-4" style="max-width: 600px;">
+
+        <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+
+        <form method="post" asp-route-idComercio="@Model.IdComercio">
+            <input type="hidden" asp-for="Configuracion.IdConfiguracion" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Tipo de Configuración</label>
+                <select asp-for="Configuracion.TipoConfiguracion"
+                        asp-items="Model.TiposConfiguracion"
+                        class="form-select">
+                    <option value="">-- Seleccione --</option>
+                </select>
+                <span asp-validation-for="Configuracion.TipoConfiguracion" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Comisión (%)</label>
+                <input asp-for="Configuracion.Comision"
+                       type="number" min="1" max="100"
+                       class="form-control" />
+                <span asp-validation-for="Configuracion.Comision" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Estado</label>
+                <select asp-for="Configuracion.Estado" class="form-select">
+                    <option value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+                </select>
+                <span asp-validation-for="Configuracion.Estado" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex gap-2 mt-4">
+                <button type="submit" class="btn btn-warning">Guardar Cambios</button>
+                <a asp-page="Index" asp-route-idComercio="@Model.IdComercio"
+                   class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
