@@ -51,7 +51,7 @@ namespace ProyectoG3.Web.Pages.Cajas
 
             _context.SaveChanges();
 
-            return Redirect("/Cajas/VerSinpe");
+            return RedirectToPage("/Index");
         }
     }
 }
