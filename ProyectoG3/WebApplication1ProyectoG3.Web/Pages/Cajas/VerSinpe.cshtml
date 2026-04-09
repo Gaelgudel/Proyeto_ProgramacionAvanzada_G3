@@ -1,18 +1,18 @@
-﻿@page "{id:int}"
+﻿@page
 @model ProyectoG3.Web.Pages.Cajas.VerSinpeModel
 @{
-    ViewData["Title"] = "SINPE recibidos";
+    ViewData["Title"] = "Todos los SINPE";
 }
 
-<h2>SINPE recibidos — @Model.Caja.Nombre (@Model.Caja.TelefonoSINPE)</h2>
+<h2>Lista de todos los SINPE registrados</h2>
 
-<a asp-page="Index" asp-route-idComercio="@Model.Caja.IdComercio" class="btn btn-secondary mb-3">
+<a asp-page="Index" class="btn btn-secondary mb-3">
     ← Volver a Cajas
 </a>
 
 @if (!Model.Sinpes.Any())
 {
-    <div class="alert alert-info">No hay pagos SINPE registrados para esta caja.</div>
+    <div class="alert alert-info">No hay pagos SINPE registrados.</div>
 }
 else
 {
@@ -28,6 +28,7 @@ else
                     <th>Descripción</th>
                     <th>Fecha</th>
                     <th>Estado</th>
+                    <th>Acción</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,6 +46,13 @@ else
                             <span class="badge @(item.Estado ? "bg-success" : "bg-secondary")">
                                 @(item.Estado ? "Sincronizado" : "No sincronizado")
                             </span>
+                        </td>
+                        <td>
+                            <a asp-page="AsignarSinpe"
+                                   asp-route-idSinpe="@item.IdSinpe"
+                                   class="btn btn-primary btn-sm">
+                                Ligar a Caja
+                            </a>
                         </td>
                     </tr>
                 }
