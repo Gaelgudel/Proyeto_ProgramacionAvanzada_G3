@@ -34,5 +34,7 @@ namespace ProyectoG3.Domain.Entities
         public DateTime FechaDeRegistro { get; set; }
 
         public bool Estado { get; set; } = false;
+
+        public int? IdCaja { get; set; }
     }
 }
