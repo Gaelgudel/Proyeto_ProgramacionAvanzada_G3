@@ -1,40 +1,89 @@
 ﻿@page
 @model ProyectoG3.Web.Pages.Bitacora.IndexModel
+@using System.Text.Json
+
 @{
     ViewData["Title"] = "Bitácora de los eventos";
 }
-<div class="container mt-4">
+
+@functions {
+    string FormatearJson(string json)
+    {
+        if (string.IsNullOrEmpty(json)) return "N/A";
+
+        try
+        {
+            var doc = JsonDocument.Parse(json);
+            var elementos = new List<string>();
+
+            foreach (var prop in doc.RootElement.EnumerateObject())
+            {
+                elementos.Add($"{prop.Name}: {prop.Value}");
+            }
+
+            return string.Join("<br/>", elementos);
+        }
+        catch
+        {
+            return json;
+        }
+    }
+}
+
+<div class="container-fluid mt-4 px-4">
     <h2>Bitácora de eventos</h2>
-    <table class="table table-bordered">
+
+    <table class="table table-bordered" style="table-layout: fixed;">
         <thead class="table-dark">
             <tr>
-                <th>ID</th>
-                <th>Tabla</th>
-                <th>Tipo</th>
-                <th>Fecha</th>
-                <th>Descripción</th>
-                <th>Datos</th>
+                <th style="width: 5%;">ID</th>
+                <th style="width: 15%;">Módulo</th>
+                <th style="width: 10%;">Tipo</th>
+                <th style="width: 15%;">Fecha</th>
+                <th style="width: 20%;">Descripción</th>
+                <th style="width: 35%;">Datos</th>
             </tr>
         </thead>
         <tbody>
+
             @if (Model.Eventos != null && Model.Eventos.Any())
             {
                 @foreach (var item in Model.Eventos)
                 {
+                    <tr>
+                        <td>@item.IdEvento</td>
+
+                        <td>@item.TablaDeEvento</td>
+
+                        <td>@item.TipoDeEvento</td>
+
+                        <td>@item.FechaDeEvento.ToString("dd/MM/yyyy HH:mm")</td>
+
+                        <td>@item.DescripcionDeEvento</td>
+
+                        <td style="max-width: 400px; overflow-wrap: break-word;">
+                            <small>
+                                <strong>Anterior:</strong><br />
+                                @Html.Raw(FormatearJson(item.DatosAnteriores))
+                            </small>
+                            <br /><br />
+                            <small>
+                                <strong>Posterior:</strong><br />
+                                @Html.Raw(FormatearJson(item.DatosPosteriores))
+                            </small>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
                 <tr>
-                    <td>@item.IdEvento</td>
-                    <td>@item.TablaDeEvento</td>
-                    <td>@item.TipoDeEvento</td>
-                    <td>@item.FechaDeEvento.ToString("g")</td>
-                    <td>@item.DescripcionDeEvento</td>
-                    <td>
-                        <small><strong>Anterior:</strong> @item.DatosAnteriores</small><br/>
-                        <small><strong>Posterior:</strong> @item.DatosPosteriores</small>
+                    <td colspan="6" class="text-center text-muted">
+                        No hay eventos registrados
                     </td>
                 </tr>
             }
-            }
-            
+
         </tbody>
     </table>
 </div>

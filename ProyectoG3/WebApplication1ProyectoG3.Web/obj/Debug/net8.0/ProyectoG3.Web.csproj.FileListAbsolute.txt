@@ -125,7 +125,6 @@ D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplica
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\MySqlConnector.dll
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
-D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\System.ClientModel.dll
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\PrograAvanzada\Proyecto\Proyeto_ProgramacionAvanzada_G3\ProyectoG3\WebApplication1ProyectoG3.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
