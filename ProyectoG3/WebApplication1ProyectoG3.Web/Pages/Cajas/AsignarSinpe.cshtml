@@ -8,8 +8,6 @@
 
 <form method="post">
     <input type="hidden" asp-for="IdSinpe" />
-    <input type="hidden" asp-for="IdCajaOrigen" />
-    <input type="hidden" asp-for="IdComercioOrigen" />
 
     <div class="mb-3">
         <label class="form-label">Seleccionar Caja</label>
@@ -20,29 +18,7 @@
 
     <button type="submit" class="btn btn-success">Guardar</button>
 
-    @if (Model.IdCajaOrigen > 0)
-    {
-        <!-- Si hay caja asignada, Cancelar vuelve a VerSinpe -->
-        <a asp-page="/Cajas/VerSinpe"
-           asp-route-id="@Model.IdCajaOrigen"
-           class="btn btn-secondary">
-            Cancelar
-        </a>
-    }
-    else if (Model.IdComercioOrigen > 0)
-    {
-        <!-- Si no hay caja pero sí comercio, vuelve a Cajas del comercio -->
-        <a asp-page="/Cajas/Index"
-           asp-route-idComercio="@Model.IdComercioOrigen"
-           class="btn btn-secondary">
-            Cancelar
-        </a>
-    }
-    else
-    {
-        <!-- Último recurso: vuelve a Comercios -->
-        <a asp-page="/Comercios/Index" class="btn btn-secondary">
-            Cancelar
-        </a>
-    }
+    <a asp-page="VerSinpe" class="btn btn-secondary">
+        Cancelar
+    </a>
 </form>
