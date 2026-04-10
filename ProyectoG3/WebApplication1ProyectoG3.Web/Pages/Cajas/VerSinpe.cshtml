@@ -6,7 +6,9 @@
 
 <h2>Lista de todos los SINPE registrados</h2>
 
-<a asp-page="Index" class="btn btn-secondary mb-3">
+<a asp-page="/Cajas/Index"
+   asp-route-idComercio="@Model.Caja.IdComercio"
+   class="btn btn-secondary mb-3">
     ← Volver a Cajas
 </a>
 
@@ -48,9 +50,9 @@ else
                             </span>
                         </td>
                         <td>
-                            <a asp-page="AsignarSinpe"
-                                   asp-route-idSinpe="@item.IdSinpe"
-                                   class="btn btn-primary btn-sm">
+                            <a asp-page="/Cajas/AsignarSinpe"
+                               asp-route-idSinpe="@item.IdSinpe"
+                               class="btn btn-primary btn-sm">
                                 Ligar a Caja
                             </a>
                         </td>
