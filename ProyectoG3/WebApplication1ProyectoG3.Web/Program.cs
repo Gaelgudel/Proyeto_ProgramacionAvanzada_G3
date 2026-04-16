@@ -19,7 +19,7 @@ builder.Services.AddScoped<ICajaService, CajaService>();
 builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 builder.Services.AddScoped<IConfiguracionComercioService, ConfiguracionComercioService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
-
+builder.Services.AddScoped<IReporteMensualService, ReporteMensualService>();
 var app = builder.Build();
 
 app.UseStaticFiles();
